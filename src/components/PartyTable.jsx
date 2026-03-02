@@ -10,26 +10,29 @@ export default function PartyTable({ partyName, data, onBack }) {
       {!selectedDistrict && (
         <>
           {/* HEADER */}
-          <div className="relative flex items-center justify-center mb-10">
+          <div className="flex items-center justify-between mb-6 sm:mb-10 px-2 sm:px-4">
             <button
-              onClick={onBack}
-              className="absolute left-0 w-10 h-10 flex items-center justify-center 
-                         bg-gray-200 rounded-full hover:bg-gray-300 
-                         shadow transition"
+              onClick={onBack} // or setSelectedDistrict(null)
+              className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center
+               bg-gray-200 rounded-full hover:bg-gray-300 
+               shadow transition shrink-0"
             >
               ←
             </button>
 
-            <h3 className="text-2xl font-semibold text-center text-blue-400 underline">
+            <h3 className="flex-1 text-center text-lg sm:text-2xl font-semibold text-blue-400 underline">
               {partyName} District Performance
             </h3>
+
+            {/* Empty div to balance layout */}
+            <div className="w-9 sm:w-10"></div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10">
 
             {/* DISTRICT TABLE */}
-            <div>
-              <table className="w-full bg-white shadow-md rounded-xl overflow-hidden border border-gray-300">
+            <div className="overflow-x-auto">
+              <table className="min-w-140 w-full bg-white shadow-md rounded-xl border border-gray-300">
                 <thead className="bg-gray-200">
                   <tr className="divide-x divide-gray-300">
                     <th className="p-3 text-center">District</th>
@@ -46,17 +49,17 @@ export default function PartyTable({ partyName, data, onBack }) {
                       className="divide-x divide-gray-300 hover:bg-gray-50 transition"
                     >
                       <td
-                        className="p-3 text-center text-blue-600 cursor-pointer hover:text-blue-800"
+                        className="p-2 sm:p-3 text-xs sm:text-sm text-center text-blue-600 cursor-pointer hover:text-blue-800"
                         onClick={() => setSelectedDistrict(item)}
                       >
                         {item.district}
                       </td>
 
-                      <td className="p-3 text-center font-semibold">
+                      <td className="p-2 sm:p-3 text-xs sm:text-sm text-center font-semibold">
                         {item.seats}
                       </td>
-                      <td className="p-3 text-center">{item.winner}</td>
-                      <td className="p-3 text-center">{item.loser}</td>
+                      <td className="p-2 sm:p-3 text-xs sm:text-sm text-center">{item.winner}</td>
+                      <td className="p-2 sm:p-3 text-xs sm:text-sm text-center">{item.loser}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -64,7 +67,7 @@ export default function PartyTable({ partyName, data, onBack }) {
             </div>
 
             {/* PIE CHART */}
-            <div className="bg-gray-50 rounded-2xl shadow-inner p-6">
+            <div className="bg-white/30 rounded-2xl p-4 sm:p-6 overflow-x-auto">
               <h3 className="text-lg font-semibold text-center mb-4">
                 Seat Distribution by District
               </h3>
@@ -79,48 +82,52 @@ export default function PartyTable({ partyName, data, onBack }) {
       {selectedDistrict && (
         <>
           {/* HEADER */}
-          <div className="relative flex items-center justify-center mb-10">
+          <div className="flex items-center justify-between mb-6 sm:mb-10 px-2 sm:px-4">
             <button
               onClick={() => setSelectedDistrict(null)}
-              className="absolute left-0 w-10 h-10 flex items-center justify-center 
-                         bg-gray-200 rounded-full hover:bg-gray-300 
-                         shadow transition"
+              className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center
+               bg-gray-200 rounded-full hover:bg-gray-300 
+               shadow transition shrink-0"
             >
               ←
             </button>
 
-            <h3 className="text-2xl font-semibold text-center text-blue-400 underline">
+            <h3 className="flex-1 text-center text-lg sm:text-2xl font-semibold text-blue-400 underline">
               {selectedDistrict.district} Constituencies
             </h3>
+
+            <div className="w-9 sm:w-10"></div>
           </div>
 
           {/* CONSTITUENCY TABLE FULL WIDTH */}
-          <table className="w-full bg-white shadow-md rounded-xl overflow-hidden border border-gray-300">
-            <thead className="bg-gray-200">
-              <tr className="divide-x divide-gray-300">
-                <th className="p-3 text-center">Constituency</th>
-                <th className="p-3 text-center">Winning Leader</th>
-                <th className="p-3 text-center">Winning Margin</th>
-                <th className="p-3 text-center">Winning Party</th>
-              </tr>
-            </thead>
-
-            <tbody className="divide-y divide-gray-300">
-              {selectedDistrict.constituencies.map((c, idx) => (
-                <tr
-                  key={idx}
-                  className="divide-x divide-gray-300 hover:bg-gray-50 transition"
-                >
-                  <td className="p-3 text-center">{c.name}</td>
-                  <td className="p-3 text-center">{c.winner}</td>
-                  <td className="p-3 text-center font-semibold">
-                    {c.margin}
-                  </td>
-                  <td className="p-3 text-center">{c.party}</td>
+          <div className="w-full overflow-x-auto">
+            <table className="w-full min-w-150 bg-white shadow-lg rounded-xl border border-gray-300">
+              <thead className="bg-gray-200">
+                <tr className="divide-x divide-gray-300">
+                  <th className="p-4 text-center font-semibold">Constituency</th>
+                  <th className="p-4 text-center font-semibold">Winning Leader</th>
+                  <th className="p-4 text-center font-semibold">Winning Margin</th>
+                  <th className="p-4 text-center font-semibold">Winning Party</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+
+              <tbody className="divide-y divide-gray-300">
+                {selectedDistrict.constituencies.map((c, idx) => (
+                  <tr
+                    key={idx}
+                    className="divide-x divide-gray-300 hover:bg-gray-50 transition"
+                  >
+                    <td className="p-4 text-center">{c.name}</td>
+                    <td className="p-4 text-center">{c.winner}</td>
+                    <td className="p-4 text-center font-semibold">
+                      {c.margin}
+                    </td>
+                    <td className="p-4 text-center">{c.party}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </>
       )}
     </div>

@@ -11,16 +11,16 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-linear-to-br from-gray-100 to-gray-200 py-10 px-6">
       <div
-        className="relative max-w-7xl mx-auto rounded-3xl shadow-2xl p-10 overflow-hidden"
+        className="relative max-w-7xl mx-auto rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-6 md:p-10 overflow-hidden"
         style={{
           backgroundImage: "url('/WB.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-white/10 backdrop-blur-xs"></div>
+        <div className="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
         <div className="relative z-10">
-          <h1 className="text-4xl font-bold text-center text-gray-800 mb-10 font-serif underline">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10 font-serif underline">
             Election Dashboard
           </h1>
 
@@ -37,9 +37,14 @@ export default function Dashboard() {
                 ))}
               </div>
 
-              <div className="mt-16 flex justify-center">
-                <div className="bg-gray-50 p-8 rounded-2xl shadow-inner">
+              <div className="mt-8 sm:mt-12 md:mt-16 w-full">
+                <div className="bg-white/30 p-4 sm:p-6 md:p-8 rounded-2xl w-full max-w-2xl mx-auto">
+                  <h3 className="text-base lg:text-2xl md:text-2xl font-semibold text-center mb-3">
+                    Seat Distribution of Parties
+                  </h3>
+                  <div className="border">
                   <PieChartSection />
+                  </div>
                 </div>
               </div>
             </>

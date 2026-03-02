@@ -55,14 +55,14 @@ export default function DistrictPieChart({ data }) {
   const colors = generateColors(data.length);
 
   return (
-    <div className="w-full h-87.5">
-      <ResponsiveContainer>
+    <div className="w-full h-75 sm:h-87.5 md:h-100 border">
+      <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
             data={data}
             dataKey="seats"
             nameKey="district"
-            outerRadius={120}
+            outerRadius="70%"
             label
           >
             {data.map((_, index) => (
@@ -71,7 +71,10 @@ export default function DistrictPieChart({ data }) {
           </Pie>
 
           <Tooltip />
-          <Legend />
+
+          <div className="hidden sm:block">
+            <Legend />
+          </div>
         </PieChart>
       </ResponsiveContainer>
     </div>
