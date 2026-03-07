@@ -1,0 +1,41 @@
+{
+  "Election Data Editor": "নির্বাচন ডেটা এডিটর",
+  "Add Party": "দল যোগ করুন",
+  "Add District": "জেলা যোগ করুন",
+  "Enter party name": "দলের নাম লিখুন",
+  "Enter district name": "জেলার নাম লিখুন",
+
+  "Total_NO_of_Voters": "মোট ভোটার",
+  "Total_Voters": "মোট ভোটার",
+  "Total_NO_of_Seats": "মোট আসন",
+  "Party_list": "দল তালিকা",
+  "Total_Seats_Divide": "মোট আসন বণ্টন",
+  "Districts": "জেলা",
+  "seats_divide": "আসন বণ্টন",
+  "constituencys": "নির্বাচনী কেন্দ্র",
+  "Constituency Name": "কেন্দ্রের নাম",
+  "Parties": "দলসমূহ",
+
+  "TMC": "তৃণমূল",
+  "BJP": "বিজেপি",
+  "CPIM": "সিপিএম",
+  "Cong": "কংগ্রেস",
+  "OTHERS": "অন্যান্য",
+
+   "hn": "হিন্দি",
+   "en": "ইংরেজি",
+   "bn": "বাংলা",
+
+   "District Name_eg" : "জেলার নাম (ইংরেজি)",
+    "District Name_bn" : "জেলার নাম (বাংলা)",
+  "District Name_hn" : "জেলার নাম (হিন্দি)",
+   "Constituency Name_eg": "নির্বাচনী এলাকার নাম (ইংরেজি)",
+   "Constituency Name_bn": "নির্বাচনী এলাকার নাম (বাংলা)",
+  "Constituency Name_hn": "নির্বাচনী এলাকার নাম (হিন্দি)",
+   "Candidate name_eg": "প্রার্থীর নাম (ইংরেজি)",
+    "Candidate name_bn": "প্রার্থীর নাম (বাংলা)",
+  "Candidate name_hn": "প্রার্থীর নাম (হিন্দি)",
+
+  "kolkata": "কলকাতা",
+  "north 24 pgs": "উত্তর ২৪ পরগনা"
+}

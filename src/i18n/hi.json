@@ -1,0 +1,42 @@
+{
+  "Election Data Editor": "चुनाव डेटा संपादक",
+  "Add Party": "पार्टी जोड़ें",
+  "Add District": "जिला जोड़ें",
+  "Enter party name": "पार्टी का नाम लिखें",
+  "Enter district name": "जिला नाम लिखें",
+
+  "Total_NO_of_Voters": "कुल मतदाता",
+  "Total_Voters": "कुल मतदाता",
+  "Total_NO_of_Seats": "कुल सीटें",
+  "Party_list": "पार्टी सूची",
+  "Total_Seats_Divide": "सीट वितरण",
+  "Districts": "जिले",
+  "seats_divide": "सीट वितरण",
+  "constituencys": "निर्वाचन क्षेत्र",
+  "Constituency Name": "निर्वाचन क्षेत्र नाम",
+  "Parties": "पार्टियां",
+
+  "TMC": "टीएमसी",
+  "BJP": "भाजपा",
+  "CPIM": "सीपीआईएम",
+  "Cong": "कांग्रेस",
+  "OTHERS": "अन्य",
+
+  "en": "अंग्रेज़ी",
+  "bn": "बंगाली",
+  "hn": "हिंदी",
+
+  "District Name_eg" : "जिला नाम (अंग्रेज़ी)",
+  "District Name_bn" : "जिला नाम (बंगाली)",
+  "District Name_hn" : "जिला नाम (हिंदी)",
+  "Constituency Name_eg": "निर्वाचन क्षेत्र का नाम (अंग्रेज़ी)",
+  "Constituency Name_bn": "निर्वाचन क्षेत्र का नाम (बंगाली)",
+  "Constituency Name_hn": "निर्वाचन क्षेत्र का नाम (हिंदी)",
+  "Candidate name_eg": "उम्मीदवार का नाम (अंग्रेज़ी)",
+  "Candidate name_bn": "उम्मीदवार का नाम (बंगाली)",
+  "Candidate name_hn": "उम्मीदवार का नाम (हिंदी)",
+
+
+  "kolkata": "कोलकाता",
+  "north 24 pgs": "उत्तर 24 परगना"
+}

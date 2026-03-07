@@ -1,0 +1,41 @@
+{
+  "Election Data Editor": "Election Data Editor",
+  "Add Party": "Add Party",
+  "Add District": "Add District",
+  "Enter party name": "Enter party name",
+  "Enter district name": "Enter district name",
+
+  "Total_NO_of_Voters": "Total No of Voters",
+  "Total_Voters": "Total Voters",
+  "Total_NO_of_Seats": "Total No of Seats",
+  "Party_list": "Party List",
+  "Total_Seats_Divide": "Total Seats Divide",
+  "Districts": "Districts",
+  "seats_divide": "Seats Divide",
+  "constituencys": "Constituencies",
+  "Constituency Name": "Constituency Name",
+  "Parties": "Parties",
+
+  "TMC": "TMC",
+  "BJP": "BJP",
+  "CPIM": "CPIM",
+  "Cong": "Congress",
+  "OTHERS": "Others",
+
+  "en": "English",
+  "bn": "Bengali",
+  "hn": "Hindi",
+
+  "District Name_eg" : "District name (English)",
+  "District Name_bn" : "District name (Bengali)",
+  "District Name_hn" : "District name (Hindi)",
+  "Constituency Name_eg": "Constituency Name (English)",
+  "Constituency Name_bn": "Constituency Name (Bengali)",
+  "Constituency Name_hn": "Constituency Name (Hindi)",
+  "Candidate name_eg": "Candidate name (English)",
+  "Candidate name_bn": "Candidate name (Bengali)",
+  "Candidate name_hn": "Candidate name (Hindi)",
+
+  "kolkata": "Kolkata",
+  "north 24 pgs": "North 24 Parganas"
+}

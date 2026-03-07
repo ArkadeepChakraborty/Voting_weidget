@@ -44,20 +44,20 @@ export default function PartyCard({ party, onClick }) {
       cursor-pointer text-white`}
     >
 
-      <div className="bg-white p-2 rounded-full mb-3 shadow">
+      {/* <div className="bg-white p-2 rounded-full mb-3 shadow">
         <img
           src={party.logo}
           alt={party.name}
           className="w-10 h-10 sm:w-14 sm:h-14 object-contain"
         />
-      </div>
+      </div> */}
 
-      <h2 className="text-sm sm:text-lg font-semibold text-center">
+      <h2 className="text-lg sm:text-3xl font-semibold text-center">
         {party.name}
       </h2>
 
-      <p className="text-xl sm:text-3xl font-bold mt-2">
-        {party.votes}
+      <p className="text-base sm:text-2xl font-bold mt-2">
+          {party.percentage ? `${party.percentage}%` : party.votes}
       </p>
 
     </div>

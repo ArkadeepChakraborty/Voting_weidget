@@ -164,7 +164,7 @@
 //                             <TextField
 //                                 size="small"
 //                                 type={key === "Votes" ? "number" : "text"}
-//                                 value={value ?? ""}
+//                                 value={t(value) ?? ""}
 //                                 onClick={(e) => e.stopPropagation()}
 //                                 onFocus={(e) => e.stopPropagation()}
 //                                 onKeyDown={(e) => e.stopPropagation()}
@@ -254,6 +254,8 @@
 
 import React, { useEffect, useState } from "react";
 import { SimpleTreeView, TreeItem } from "@mui/x-tree-view";
+import MenuItem from "@mui/material/MenuItem";
+import { useTranslation } from "react-i18next";
 import {
   TextField,
   Button,
@@ -272,9 +274,10 @@ function JsonTreeEditor() {
   const [newDistrict, setNewDistrict] = useState("");
   const [hasChanges, setHasChanges] = useState(false);
   const [newSeat, setNewSeat] = useState("");
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/election/election-data")
+    fetch(`http://localhost:5000/api/election/election-data`)
       .then((res) => res.json())
       .then((result) => {
         setData(result);
@@ -284,9 +287,11 @@ function JsonTreeEditor() {
         console.error("Fetch error:", err);
         setLoading(false);
       });
-  }, []);
 
-  const clone = (obj) => JSON.parse(JSON.stringify(obj));
+  }, [i18n.language]);
+
+  // const clone = (obj) => JSON.parse(JSON.stringify(obj));
+  const clone = structuredClone;
 
   const handleChange = (path, value) => {
     const keys = path.split("__");
@@ -357,7 +362,7 @@ function JsonTreeEditor() {
 
     const updated = clone(data);
 
-    updated["Districts"][districtKey]["Constituencys"][key] = {
+    updated["Districts"][districtKey]["constituencys"][key] = {
       "Constituency Name": name,
       "Parties": {},
     };
@@ -396,6 +401,16 @@ function JsonTreeEditor() {
 
     setData(updated);
     setHasChanges(true);
+  };
+
+  const reverseTranslate = (value) => {
+    const resources = i18n.getResourceBundle(i18n.language, "translation");
+
+    const match = Object.keys(resources).find(
+      key => resources[key] === value
+    );
+
+    return match || value;
   };
 
   const addPartyToConstituency = (districtKey, constituencyKey) => {
@@ -452,6 +467,48 @@ function JsonTreeEditor() {
     alert("Election data updated successfully");
   };
 
+  const handleImageUpload = async (e, path) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const keys = path.split("__");
+
+    const district = keys[1];
+    const constituency = keys[3];
+    const party = keys[5];
+
+    const formData = new FormData();
+    formData.append("image", file);
+    formData.append("district", district);
+    formData.append("constituency", constituency);
+    formData.append("party", party);
+
+    try {
+
+      const res = await fetch(
+        "http://localhost:5000/api/election/update-election-data",
+        {
+          method: "POST",
+          body: formData
+        }
+      );
+
+      const result = await res.json();
+
+      const updated = clone(data);
+
+      updated.Districts[district]
+        .constituencys[constituency]
+        .Parties[party]
+        .Image = result.image;
+
+      setData(updated);
+
+    } catch (error) {
+      console.error("Upload failed", error);
+    }
+  };
+
   const renderTree = (obj, parentPath = "") => {
     if (Array.isArray(obj)) {
       return obj.map((item, index) => {
@@ -470,7 +527,7 @@ function JsonTreeEditor() {
                   fullWidth
                   value={item}
                   onChange={(e) =>
-                    handleChange(currentPath, e.target.value)
+                    handleChange(currentPath, reverseTranslate(e.target.value))
                   }
                   onKeyDown={(e) => e.stopPropagation()}
                   onClick={(e) => e.stopPropagation()}
@@ -522,7 +579,7 @@ function JsonTreeEditor() {
                   width: "100%",
                 }}
               >
-                <Typography fontWeight="bold">{key}</Typography>
+                <Typography fontWeight="bold">{t(key)}</Typography>
 
                 <Box>
                   {isDistrict && (
@@ -646,21 +703,48 @@ function JsonTreeEditor() {
               }}
             >
               <Typography sx={{ minWidth: "150px" }}>
-                {key}:
+                {t(key)}:
               </Typography>
 
-              <TextField
-                fullWidth
-                size="small"
-                type={key === "Votes" ? "number" : "text"}
-                value={value ?? ""}
-                onChange={(e) =>
-                  handleChange(currentPath, e.target.value)
-                }
-                onKeyDown={(e) => e.stopPropagation()}
-                onClick={(e) => e.stopPropagation()}
-                onFocus={(e) => e.stopPropagation()}
-              />
+              {key === "Image" ? (
+                <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+
+                  {value && (
+                    <img
+                      src={`http://localhost:5000/uploads/candidates/${value}`}
+                      alt="candidate"
+                      width="50"
+                      height="50"
+                      style={{ borderRadius: "50%" }}
+                    />
+                  )}
+
+                  <Button
+                    variant="outlined"
+                    component="label"
+                    size="small"
+                  >
+                    Upload
+                    <input
+                      hidden
+                      type="file"
+                      onClick={(e) => e.stopPropagation()}
+                      onKeyDown={(e) => e.stopPropagation()}
+                      onChange={(e) => handleImageUpload(e, currentPath)}
+                    />
+                  </Button>
+                </Box>
+
+              ) : (
+                <TextField
+                  fullWidth
+                  size="small"
+                  type={key === "Votes" ? "number" : "text"}
+                  value={value}
+                  onChange={(e) => handleChange(currentPath, e.target.value)}
+                  onClick={(e) => e.stopPropagation()}
+                />
+              )}
 
               {parentPath.includes("Seats Divide") && (
                 <IconButton
@@ -687,9 +771,29 @@ function JsonTreeEditor() {
         borderRadius: 3,
       }}
     >
-      <Typography variant="h5" fontWeight="bold" sx={{ mb: 3 }}>
-        Election Data Editor
-      </Typography>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          mb: 3
+        }}
+      >
+        <Typography variant="h5" fontWeight="bold">
+          {t("Election Data Editor")}
+        </Typography>
+
+        <TextField
+          select
+          size="small"
+          value={i18n.language}
+          onChange={(e) => i18n.changeLanguage(e.target.value)}
+        >
+          <MenuItem value="en">English</MenuItem>
+          <MenuItem value="hi">Hindi</MenuItem>
+          <MenuItem value="bn">Bengali</MenuItem>
+        </TextField>
+      </Box>
 
       <Divider sx={{ mb: 3 }} />
 
@@ -710,14 +814,14 @@ function JsonTreeEditor() {
           }}
         >
           <Typography variant="subtitle1" fontWeight="bold" sx={{ mb: 2 }}>
-            Add Party
+            {t("Add Party")}
           </Typography>
 
           <Box sx={{ display: "flex", gap: 2 }}>
             <TextField
               fullWidth
               size="small"
-              placeholder="Enter party name"
+              placeholder={t("Enter party name")}
               value={newParty}
               onChange={(e) => setNewParty(e.target.value)}
             />
@@ -729,10 +833,13 @@ function JsonTreeEditor() {
 
                 const updated = clone(data);
 
-                updated["Party_list"].push(newParty);
+                updated["Party_list"].en.push(newParty);
+                updated["Party_list"].bn.push(newParty);
+                updated["Party_list"].hn.push(newParty);
 
                 setData(updated);
                 setNewParty("");
+                setData(updated);
                 setHasChanges(true);
               }}
             >
@@ -750,14 +857,14 @@ function JsonTreeEditor() {
           }}
         >
           <Typography variant="subtitle1" fontWeight="bold" sx={{ mb: 2 }}>
-            Add District
+            {t("Add District")}
           </Typography>
 
           <Box sx={{ display: "flex", gap: 2 }}>
             <TextField
               fullWidth
               size="small"
-              placeholder="Enter district name"
+              placeholder={t("Enter district name")}
               value={newDistrict}
               onChange={(e) => setNewDistrict(e.target.value)}
             />
