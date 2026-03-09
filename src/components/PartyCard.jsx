@@ -33,7 +33,7 @@
 export default function PartyCard({ party, onClick }) {
   return (
     <div
-      onClick={() => onClick(party.name)}
+      // onClick={() => onClick(party.name)}
       className={`
       ${party.color}
       rounded-2xl sm:rounded-3xl shadow-lg

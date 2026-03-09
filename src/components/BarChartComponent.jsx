@@ -10,7 +10,7 @@ import {
 
 export default function BarChartComponent({ data }) {
 
-    const colors = ["#16a34a", "#f97316", "#ca8a04", "#be185d", "#2563eb"];
+    const colors = ["#16a34a", "#ca8a04", "#ef4444", "#be185d", "#2563eb"];
 
 
     return (

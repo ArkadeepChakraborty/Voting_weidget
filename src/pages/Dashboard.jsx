@@ -114,6 +114,7 @@ export default function Dashboard() {
   const [searchText, setSearchText] = useState("");
   const [candidateData, setCandidateData] = useState([]);
   const [voteData, setVoteData] = useState([]);
+  // const [seatsData, setSeatsData] = useState([]);
   const [isSearchMode, setIsSearchMode] = useState(false);
 
   const API = "http://localhost:5000/api";
@@ -130,7 +131,7 @@ export default function Dashboard() {
         if (!res.ok) throw new Error("Failed to load constituencies");
         const data = await res.json();
         setAllConstituencies(data);
-        setFilteredConstituencies(data); // initially show all
+        setFilteredConstituencies(data);
       } catch (err) {
         console.error(err);
       }

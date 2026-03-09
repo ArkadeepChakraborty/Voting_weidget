@@ -290,15 +290,17 @@ function JsonTreeEditor() {
 
   }, [i18n.language]);
 
-  // const clone = (obj) => JSON.parse(JSON.stringify(obj));
-  const clone = structuredClone;
+  const clone = (obj) => JSON.parse(JSON.stringify(obj));
+  // const clone = structuredClone;
 
   const handleChange = (path, value) => {
     const keys = path.split("__");
     const updated = clone(data);
+
     let current = updated;
 
     for (let i = 0; i < keys.length - 1; i++) {
+      if (!current[keys[i]]) current[keys[i]] = {};
       current = current[keys[i]];
     }
 
@@ -317,6 +319,7 @@ function JsonTreeEditor() {
   const handleDelete = (path) => {
     const keys = path.split("__");
     const updated = clone(data);
+
     let current = updated;
 
     for (let i = 0; i < keys.length - 1; i++) {
@@ -338,15 +341,19 @@ function JsonTreeEditor() {
   const addDistrict = () => {
     if (!newDistrict.trim()) return;
 
+    const key = newDistrict.toLowerCase().replace(/\s+/g, "_");
+
     const updated = clone(data);
 
     if (!updated["Districts"]) {
       updated["Districts"] = {};
     }
 
-    updated["Districts"][newDistrict] = {
-      "seats_divide": {},
-      "constituencys": {},
+    updated["Districts"][key] = {
+      "District Name_eg": newDistrict,
+      "District Name_bn": "",
+      "District Name_hn": "",
+      "constituencys": {}
     };
 
     setData(updated);
@@ -355,16 +362,20 @@ function JsonTreeEditor() {
   };
 
   const addConstituencyToDistrict = (districtKey) => {
+
     const name = prompt("Enter Constituency Name:");
     if (!name) return;
 
-    const key = name.replace(/\s+/g, "_");
+    const key = name.toLowerCase().replace(/\s+/g, "_");
 
     const updated = clone(data);
 
     updated["Districts"][districtKey]["constituencys"][key] = {
-      "Constituency Name": name,
-      "Parties": {},
+      "Constituency Name_eg": name,
+      "Constituency Name_bn": "",
+      "Constituency Name_hn": "",
+      "Total_NO_of_Voters": "",
+      "Parties": {}
     };
 
     setData(updated);
@@ -372,7 +383,8 @@ function JsonTreeEditor() {
   };
 
   const addParty = (path) => {
-    if (!newParty || !newSeat) return;
+
+    if (!newParty.trim()) return;
 
     const updated = clone(data);
 
@@ -383,7 +395,7 @@ function JsonTreeEditor() {
       obj = obj[k];
     });
 
-    obj[newParty] = Number(newSeat);
+    obj[newParty] = Number(newSeat || 0);
 
     setData(updated);
     setNewParty("");
@@ -391,17 +403,17 @@ function JsonTreeEditor() {
     setHasChanges(true);
   };
 
-  const addDistrictSeatParty = (districtKey) => {
-    const partyName = prompt("Enter Party Name:");
-    if (!partyName) return;
+  // const addDistrictSeatParty = (districtKey) => {
+  //   const partyName = prompt("Enter Party Name:");
+  //   if (!partyName) return;
 
-    const updated = clone(data);
+  //   const updated = clone(data);
 
-    updated["Districts"][districtKey]["seats_divide"][partyName] = 0;
+  //   updated["Districts"][districtKey]["seats_divide"][partyName] = 0;
 
-    setData(updated);
-    setHasChanges(true);
-  };
+  //   setData(updated);
+  //   setHasChanges(true);
+  // };
 
   const reverseTranslate = (value) => {
     const resources = i18n.getResourceBundle(i18n.language, "translation");
@@ -419,12 +431,12 @@ function JsonTreeEditor() {
 
     const updated = clone(data);
 
-    updated["Districts"][districtKey]["constituencys"][constituencyKey][
-      "Parties"
-    ][partyName] = {
-      "Candidate name": "",
-      Image: "",
-      Votes: 0,
+    updated["Districts"][districtKey]["constituencys"][constituencyKey]["Parties"][partyName] = {
+      "Candidate name_eg": "",
+      "Candidate name_bn": "",
+      "Candidate name_hn": "",
+      "Image": "",
+      "Votes": 0
     };
 
     setData(updated);
@@ -448,18 +460,22 @@ function JsonTreeEditor() {
   };
 
   const saveToBackend = (updatedData) => {
+
     const cleaned = convertNumbers(updatedData);
 
-    fetch("http://localhost:5000/api/election/update-election-data", {
+    fetch("http://localhost:5000/api/election/update-json", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(cleaned),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(cleaned)
     })
       .then(() => {
         setData(cleaned);
         setHasChanges(false);
       })
       .catch((err) => console.error("Save failed:", err));
+
   };
 
   const handleSave = () => {
@@ -468,25 +484,35 @@ function JsonTreeEditor() {
   };
 
   const handleImageUpload = async (e, path) => {
+
     const file = e.target.files[0];
     if (!file) return;
 
     const keys = path.split("__");
 
-    const district = keys[1];
-    const constituency = keys[3];
-    const party = keys[5];
+    const districtIndex = keys.indexOf("Districts") + 1;
+    const constituencyIndex = keys.indexOf("constituencys") + 1;
+    const partyIndex = keys.indexOf("Parties") + 1;
+
+    const district = keys[districtIndex];
+    const constituency = keys[constituencyIndex];
+    const party = keys[partyIndex];
+
+    if (!district || !constituency || !party) {
+      console.error("Invalid path:", path);
+      return;
+    }
 
     const formData = new FormData();
     formData.append("image", file);
-    formData.append("district", district);
+    // formData.append("district", district);
     formData.append("constituency", constituency);
     formData.append("party", party);
 
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/election/update-election-data",
+        "http://localhost:5000/api/election/uploadimage",
         {
           method: "POST",
           body: formData
@@ -497,16 +523,25 @@ function JsonTreeEditor() {
 
       const updated = clone(data);
 
-      updated.Districts[district]
-        .constituencys[constituency]
-        .Parties[party]
-        .Image = result.image;
+      if (
+        updated?.Districts?.[district]?.constituencys?.[constituency]?.Parties?.[party]
+      ) {
+        updated.Districts[district]
+          .constituencys[constituency]
+          .Parties[party]
+          .Image = result.image;
+      }
+
+      setData(updated);
 
       setData(updated);
 
     } catch (error) {
+
       console.error("Upload failed", error);
+
     }
+
   };
 
   const renderTree = (obj, parentPath = "") => {
@@ -555,9 +590,9 @@ function JsonTreeEditor() {
       const isDistrict =
         parentPath === "Districts";
 
-      const isDistrictSeatDivide =
-        parentPath.startsWith("Districts__") &&
-        key === "seats_divide";
+      // const isDistrictSeatDivide =
+      //   parentPath.startsWith("Districts__") &&
+      //   key === "seats_divide";
 
       const isPartyContainer = key === "Parties";
 
@@ -607,7 +642,7 @@ function JsonTreeEditor() {
                     </>
                   )}
 
-                  {isDistrictSeatDivide && (
+                  {/* {isDistrictSeatDivide && (
                     <Box sx={{ display: "flex", gap: 1, mt: 1 }}>
 
                       <TextField
@@ -641,7 +676,7 @@ function JsonTreeEditor() {
                       </Button>
 
                     </Box>
-                  )}
+                  )} */}
 
                   <Box>
 
@@ -743,10 +778,12 @@ function JsonTreeEditor() {
                   value={value}
                   onChange={(e) => handleChange(currentPath, e.target.value)}
                   onClick={(e) => e.stopPropagation()}
+                  onKeyDown={(e) => e.stopPropagation()}
+                  onFocus={(e) => e.stopPropagation()}
                 />
               )}
 
-              {parentPath.includes("Seats Divide") && (
+              {parentPath.includes("seats_divide") && (
                 <IconButton
                   color="error"
                   onClick={() => handleDelete(currentPath)}
@@ -833,13 +870,25 @@ function JsonTreeEditor() {
 
                 const updated = clone(data);
 
+                // Ensure structure exists
+                if (!updated["Party_list"]) {
+                  updated["Party_list"] = {
+                    en: [],
+                    bn: [],
+                    hn: []
+                  };
+                }
+
+                if (!updated["Party_list"].en) updated["Party_list"].en = [];
+                if (!updated["Party_list"].bn) updated["Party_list"].bn = [];
+                if (!updated["Party_list"].hn) updated["Party_list"].hn = [];
+
                 updated["Party_list"].en.push(newParty);
                 updated["Party_list"].bn.push(newParty);
                 updated["Party_list"].hn.push(newParty);
 
                 setData(updated);
                 setNewParty("");
-                setData(updated);
                 setHasChanges(true);
               }}
             >
@@ -881,7 +930,7 @@ function JsonTreeEditor() {
 
       <Divider sx={{ mb: 3 }} />
 
-      <SimpleTreeView>
+      <SimpleTreeView expansionTrigger="iconContainer">
         {renderTree(data)}
       </SimpleTreeView>
 
