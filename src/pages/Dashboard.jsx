@@ -117,7 +117,7 @@ export default function Dashboard() {
   // const [seatsData, setSeatsData] = useState([]);
   const [isSearchMode, setIsSearchMode] = useState(false);
 
-  const API = "http://localhost:5000/api";
+  const API = "http://localhost:4848/api";
 
   const [allConstituencies, setAllConstituencies] = useState([]);
   const [filteredConstituencies, setFilteredConstituencies] = useState([]);

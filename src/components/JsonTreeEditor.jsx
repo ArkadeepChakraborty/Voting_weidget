@@ -277,7 +277,7 @@ function JsonTreeEditor() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/election/election-data`)
+    fetch(`http://localhost:4848/api/election/election-data`)
       .then((res) => res.json())
       .then((result) => {
         setData(result);
@@ -463,7 +463,7 @@ function JsonTreeEditor() {
 
     const cleaned = convertNumbers(updatedData);
 
-    fetch("http://localhost:5000/api/election/update-json", {
+    fetch("http://localhost:4848/api/election/update-json", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -512,7 +512,7 @@ function JsonTreeEditor() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/election/uploadimage",
+        "http://localhost:4848/api/election/uploadimage",
         {
           method: "POST",
           body: formData
@@ -754,7 +754,7 @@ function JsonTreeEditor() {
 
                   {value && (
                     <img
-                      src={`http://localhost:5000/uploads/candidates/${value}`}
+                      src={`http://localhost:4848/uploads/candidates/${value}`}
                       alt="candidate"
                       width="60"
                       height="60"
