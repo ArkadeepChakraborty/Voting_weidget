@@ -45,14 +45,14 @@ export default function PieChartSection({ parties }) {
     function handleResize() {
       if (window.innerWidth < 768) { // Mobile breakpoint
         setOuterRadius(120); // Smaller pie for mobile
-        setContainerHeight(250); // Reduce container height
+        setContainerHeight(250);
       } else {
         setOuterRadius(220); // Desktop size
         setContainerHeight(350);
       }
     }
 
-    handleResize(); // Set initial size
+    handleResize(); 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

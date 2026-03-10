@@ -617,6 +617,7 @@ function JsonTreeEditor() {
                 <Typography fontWeight="bold">{t(key)}</Typography>
 
                 <Box>
+                  {/* Add New Constituency */}
                   {isDistrict && (
                     <>
                       <Button
@@ -870,7 +871,6 @@ function JsonTreeEditor() {
 
                 const updated = clone(data);
 
-                // Ensure structure exists
                 if (!updated["Party_list"]) {
                   updated["Party_list"] = {
                     en: [],

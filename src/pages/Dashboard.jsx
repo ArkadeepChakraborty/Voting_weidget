@@ -139,7 +139,7 @@ export default function Dashboard() {
     fetchConstituencies();
   }, []);
 
-  // ================= FETCH OVERALL PARTY DATA =================
+  // FETCH OVERALL PARTY DATA
 
   const fetchParties = async () => {
     try {
@@ -174,7 +174,7 @@ export default function Dashboard() {
     }
   };
 
-  // ================= SEARCH CONSTITUENCY =================
+  // SEARCH CONSTITUENCY
 
   const searchConstituency = async () => {
 
@@ -282,7 +282,7 @@ export default function Dashboard() {
     setFilteredConstituencies(filtered);
   };
 
-  // ================= CLEAR SEARCH =================
+  // CLEAR SEARCH
 
   const clearSearch = () => {
 
@@ -293,8 +293,6 @@ export default function Dashboard() {
     fetchParties();
 
   };
-
-  // ================= INITIAL LOAD =================
 
   useEffect(() => {
 
@@ -318,8 +316,6 @@ export default function Dashboard() {
         <div className="absolute inset-0 bg-white/20 backdrop-blur-md"></div>
 
         <div className="relative z-10">
-
-          {/* TITLE */}
 
           <h1 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-8 font-serif">
             West Bengal Election Dashboard
