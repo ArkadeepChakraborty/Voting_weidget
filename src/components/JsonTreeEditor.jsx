@@ -743,15 +743,25 @@ function JsonTreeEditor() {
               </Typography>
 
               {key === "Image" ? (
-                <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 2,
+                    flexDirection: { xs: "column", sm: "row" } // mobile column, desktop row
+                  }}
+                >
 
                   {value && (
                     <img
                       src={`http://localhost:5000/uploads/candidates/${value}`}
                       alt="candidate"
-                      width="50"
-                      height="50"
-                      style={{ borderRadius: "50%" }}
+                      width="60"
+                      height="60"
+                      style={{
+                        borderRadius: "50%",
+                        objectFit: "cover"
+                      }}
                     />
                   )}
 
@@ -759,6 +769,7 @@ function JsonTreeEditor() {
                     variant="outlined"
                     component="label"
                     size="small"
+                    sx={{ width: { xs: "100%", sm: "auto" } }}
                   >
                     Upload
                     <input
@@ -769,6 +780,7 @@ function JsonTreeEditor() {
                       onChange={(e) => handleImageUpload(e, currentPath)}
                     />
                   </Button>
+                  
                 </Box>
 
               ) : (
