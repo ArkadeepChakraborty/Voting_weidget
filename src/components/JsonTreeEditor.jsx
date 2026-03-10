@@ -276,8 +276,10 @@ function JsonTreeEditor() {
   const [newSeat, setNewSeat] = useState("");
   const { t, i18n } = useTranslation();
 
+  const API = "http://localhost:4848/api";
+
   useEffect(() => {
-    fetch(`http://localhost:4848/api/election/election-data`)
+    fetch(`${API}/election/election-data`)
       .then((res) => res.json())
       .then((result) => {
         setData(result);
@@ -463,7 +465,7 @@ function JsonTreeEditor() {
 
     const cleaned = convertNumbers(updatedData);
 
-    fetch("http://localhost:4848/api/election/update-json", {
+    fetch(`${API}/election/update-json`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -512,7 +514,7 @@ function JsonTreeEditor() {
     try {
 
       const res = await fetch(
-        "http://localhost:4848/api/election/uploadimage",
+        `${API}/election/uploadimage`,
         {
           method: "POST",
           body: formData
