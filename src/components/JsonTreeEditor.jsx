@@ -748,7 +748,7 @@ function JsonTreeEditor() {
                     display: "flex",
                     alignItems: "center",
                     gap: 2,
-                    flexDirection: { xs: "column", sm: "row" } // mobile column, desktop row
+                    flexDirection: { xs: "column", sm: "row" }
                   }}
                 >
 
