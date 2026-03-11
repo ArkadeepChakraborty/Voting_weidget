@@ -1010,7 +1010,7 @@ function JsonTreeEditor() {
           disabled={!hasChanges}
           onClick={handleSave}
         >
-          Save Changes
+          {t("Save Changes")}
         </Button>
       </Box>
     </Paper>
