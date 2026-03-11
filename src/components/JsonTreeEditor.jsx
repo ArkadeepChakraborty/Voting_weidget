@@ -787,12 +787,21 @@ function JsonTreeEditor() {
 
                 </Box>
 
-              ) : (parentPath.includes("Total_Seats_Divide") || key === "Votes") ? (
+              ) : (parentPath.includes("Total_Seats_Divide")) ? (
 
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    border: "1px solid #ccc",
+                    borderRadius: "8px",
+                    overflow: "hidden",
+                    width: "140px"
+                  }}
+                >
                   <IconButton
                     size="small"
+                    sx={{ borderRight: "1px solid #ccc", borderRadius: 0 }}
                     onClick={() =>
                       handleChange(currentPath, Math.max(0, Number(value) - 1))
                     }
@@ -801,10 +810,18 @@ function JsonTreeEditor() {
                   </IconButton>
 
                   <TextField
-                    size="small"
+                    variant="standard"
                     type="number"
                     value={value}
-                    sx={{ width: "80px" }}
+                    InputProps={{ disableUnderline: true }}
+                    sx={{
+                      flex: 1,
+                      textAlign: "center",
+                      "& input": {
+                        textAlign: "center",
+                        padding: "6px"
+                      }
+                    }}
                     onChange={(e) => handleChange(currentPath, e.target.value)}
                     onClick={(e) => e.stopPropagation()}
                     onKeyDown={(e) => e.stopPropagation()}
@@ -812,13 +829,13 @@ function JsonTreeEditor() {
 
                   <IconButton
                     size="small"
+                    sx={{ borderLeft: "1px solid #ccc", borderRadius: 0 }}
                     onClick={() =>
                       handleChange(currentPath, Number(value) + 1)
                     }
                   >
                     <AddIcon fontSize="small" />
                   </IconButton>
-
                 </Box>
 
               ) : (
