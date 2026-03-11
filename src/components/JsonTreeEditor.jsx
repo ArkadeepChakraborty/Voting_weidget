@@ -266,6 +266,8 @@ import {
   Divider,
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 
 function JsonTreeEditor() {
   const [data, setData] = useState({});
@@ -782,10 +784,45 @@ function JsonTreeEditor() {
                       onChange={(e) => handleImageUpload(e, currentPath)}
                     />
                   </Button>
-                  
+
+                </Box>
+
+              ) : (parentPath.includes("Total_Seats_Divide") || key === "Votes") ? (
+
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+
+                  <IconButton
+                    size="small"
+                    onClick={() =>
+                      handleChange(currentPath, Math.max(0, Number(value) - 1))
+                    }
+                  >
+                    <RemoveIcon fontSize="small" />
+                  </IconButton>
+
+                  <TextField
+                    size="small"
+                    type="number"
+                    value={value}
+                    sx={{ width: "80px" }}
+                    onChange={(e) => handleChange(currentPath, e.target.value)}
+                    onClick={(e) => e.stopPropagation()}
+                    onKeyDown={(e) => e.stopPropagation()}
+                  />
+
+                  <IconButton
+                    size="small"
+                    onClick={() =>
+                      handleChange(currentPath, Number(value) + 1)
+                    }
+                  >
+                    <AddIcon fontSize="small" />
+                  </IconButton>
+
                 </Box>
 
               ) : (
+
                 <TextField
                   fullWidth
                   size="small"
@@ -796,16 +833,17 @@ function JsonTreeEditor() {
                   onKeyDown={(e) => e.stopPropagation()}
                   onFocus={(e) => e.stopPropagation()}
                 />
+
               )}
 
-              {parentPath.includes("seats_divide") && (
+              {/* {parentPath.includes("Total_Seats_Divide") && (
                 <IconButton
                   color="error"
                   onClick={() => handleDelete(currentPath)}
                 >
                   <DeleteIcon />
                 </IconButton>
-              )}
+              )} */}
             </Box>
           }
         />
