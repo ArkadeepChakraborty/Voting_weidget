@@ -50,7 +50,7 @@ export default function NewsTicker() {
           className="flex items-center whitespace-nowrap"
         >
           {[...headlines, ...headlines].map((text, index) => (
-            <div key={index} className="flex items-center mr-10">
+            <div key={index} className="flex items-center mr-5">
 
               {/* Number box */}
               <span className="bg-gray-800 text-white text-xs font-bold px-2 py-1 mr-2">

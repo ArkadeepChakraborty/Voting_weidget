@@ -139,7 +139,7 @@ export default function PieChartSection() {
   return (
     <div className="w-full max-w-xl mx-auto bg-transparent rounded-xl p-4 border border-gray-400">
 
-      <h2 className="text-center font-semibold text-sm sm:text-base -mb-13">
+      <h2 className="text-center font-semibold text-sm sm:text-base -mb-9">
         ২০২১ নির্বাচনের পঞ্চায়েত ফলাফল
       </h2>
 

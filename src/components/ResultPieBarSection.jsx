@@ -210,7 +210,7 @@ export default function ResultPieBarSection() {
     <div className="w-full max-w-xl mx-auto rounded-xl p-4 border border-gray-400 -mb-1">
 
       {/* PIE CHART */}
-      <h2 className="text-center font-semibold text-sm sm:text-base -mb-12">
+      <h2 className="text-center font-semibold text-sm sm:text-base -mb-9">
         ২০২১ নির্বাচনের পঞ্চায়েত ফলাফল
       </h2>
 

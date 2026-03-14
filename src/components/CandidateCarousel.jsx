@@ -48,7 +48,7 @@ const CandidateCard = ({ candidate }) => {
                 <div className="absolute -top-2 left-1/2 -translate-x-1/2">
                     <span
                         className={`text-xs sm:text-sm font-bold px-4 py-1 rounded shadow
-            ${isLeading ? "bg-green-400 text-black" : "bg-red-400 text-white"}`}
+            ${isLeading ? "bg-green-400 text-black" : "bg-red-600 text-white"}`}
                     >
                         {candidate.status}
                     </span>
@@ -80,7 +80,7 @@ const CandidateCard = ({ candidate }) => {
 
                     <div
                         className={`px-2 py-1 rounded text-lg font-bold
-            ${isLeading ? "bg-green-400 text-black" : "bg-red-400 text-white"}`}
+            ${isLeading ? "bg-green-400 text-black" : "bg-red-600 text-white"}`}
                     >
                         {isLeading ? "▲" : "▼"}
                     </div>
