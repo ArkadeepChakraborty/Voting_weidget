@@ -39,8 +39,8 @@ export default function NewsTicker() {
     <div className="w-full flex items-center bg-gray-200 overflow-hidden border">
 
       {/* Left NEWS label */}
-      <div className="bg-red-600 text-white font-bold px-4 py-2 text-sm">
-        NEWS
+      <div className="flex bg-red-600 text-white font-bold px-4 py-2 text-sm">
+        <span className="hidden md:block lg:block mr-1">BREAKING</span> NEWS
       </div>
 
       {/* Ticker area */}
