@@ -10,7 +10,7 @@ const VideoCard = ({ video }) => {
     <div
       onClick={openVideo}
       className="cursor-pointer min-w-65 sm:min-w-70 md:min-w-75 lg:min-w-[320px] 
-      bg-white/70 rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition"
+      bg-cyan-100 rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition"
     >
 
       {/* Header */}

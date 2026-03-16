@@ -19,11 +19,11 @@ export default function HomePage() {
   return (
     <div
       className="min-h-screen relative"
-      style={{
-        backgroundImage: "url('/WB.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      // style={{
+      //   backgroundImage: "url('/WB.png')",
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      // }}
     >
       <div className="absolute inset-0 backdrop-blur-xs bg-white/10"></div>
 
