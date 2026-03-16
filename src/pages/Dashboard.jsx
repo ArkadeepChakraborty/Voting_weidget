@@ -117,7 +117,7 @@ export default function Dashboard() {
   // const [seatsData, setSeatsData] = useState([]);
   const [isSearchMode, setIsSearchMode] = useState(false);
 
-  const API = "http://localhost:4848/api";
+  const API = import.meta.env.VITE_API_ONE;
 
   const [allConstituencies, setAllConstituencies] = useState([]);
   const [filteredConstituencies, setFilteredConstituencies] = useState([]);
