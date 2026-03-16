@@ -7,6 +7,7 @@ import ResultBarSection from "../components/ResultBarSection";
 import ResultPieBarSection from "../components/ResultPieBarSection";
 import ElectionBannerSection from "../components/ElectionBannerSection";
 import DonutPieChartSection from "../components/DonutPieChartSection";
+import ResultTabsSection from "../components/ResultTabsSection";
 
 export default function HomePage() {
   const parties = [
@@ -40,7 +41,9 @@ export default function HomePage() {
 
           <ResultBarSection /> */}
 
-          <ResultPieBarSection />
+          {/* <ResultPieBarSection /> */}
+
+          <ResultTabsSection />
 
           {/* <VideoCardsSection /> */}
 
