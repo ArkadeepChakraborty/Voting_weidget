@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+
+path {
+  fill: #e6e6e6;
+  transition: fill 0.6s ease;
+}
+

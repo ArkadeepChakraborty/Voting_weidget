@@ -9,3 +9,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 } */
+
+
+svg path {
+  transition: fill 0.6s ease, stroke 0.3s ease, stroke-width 0.3s ease;
+}
+
+svg path:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}

@@ -1,21 +1,117 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import NewWbAssembly from '../assets/new_wb_assembly_1.svg?react';
 import { reHashdata } from '../../utils/reHashConsticuencyData';
 
+
 function Tab1() {
 
-  const [constitutionData, setConstitutionData] = useState(null)
-  const handlePathClick = (event) => {
-    const target = event.target;
-    let constituency_name=target.getAttribute("sub_link");
-    console.log(constituency_name);
-    if (!target) return;
+  const [constitutionData, setConstitutionData] = useState(null);
+  const [carouselIndex, setCarouselIndex] = useState(0);
+  const [selectedSeat,setSelectedSeat] = useState(null)
+  useEffect(() => {
 
-    // const dataTitleValue = target.dataset.title;
-    // const consObj = reHashdata(dataTitleValue);
-    // setConstitutionData(consObj);
+  const data = window.WB_ELECTION_DATA?.sheet_0;
+  if (!data) return;
+
+  const partyColor = {
+    AITC: "#00a651",
+    BJP: "#ff9933",
+    CPI: "#e53935",
+    CPIM: "#e53935",
+    INC: "#1976d2"
   };
+
+  const seats = Object.entries(data);
+
+  seats.forEach(([seat, r], index) => {
+
+    setTimeout(() => {
+
+      const el = document.querySelector(`[sub_link="${r.constituency}"]`);
+
+      if (el) {
+        el.style.fill = partyColor[r.party] || "#cccccc";
+      }
+
+    }, index * 15); // controls animation speed
+
+  });
+
+}, []);
+
+useEffect(() => {
+
+  document.querySelectorAll("path[sub_link]").forEach(p => {
+
+    p.style.stroke = "none";
+    p.style.strokeWidth = "1";
+
+  });
+
+  if(selectedSeat){
+
+    const el = document.querySelector(`[sub_link="${selectedSeat}"]`);
+
+    if(el){
+
+      el.style.stroke = "#111";
+      el.style.strokeWidth = "3";
+
+      el.style.filter = "drop-shadow(0px 0px 6px rgba(0,0,0,0.6))";
+
+    }
+
+  }
+
+},[selectedSeat]);
+
+  const handlePathClick = (event) => {
+
+  const target = event.target;
+  if (!target) return;
+
+  const constituency_name = target.getAttribute("sub_link");
+  if (!constituency_name) return;
+
+  const seatKey = constituency_name
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g,"_");
+
+  const prev = window.WB_ELECTION_DATA?.sheet_0?.[seatKey];
+  const current = window.WB_ELECTION_DATA?.sheet_1?.[seatKey];
+
+  setSelectedSeat(constituency_name);
+
+  setConstitutionData({
+    prev,
+    current
+  });
+
+};
+
+  const buildCandidateList = (data) => {
+
+    const list = []
+
+    Object.keys(data).forEach(k => {
+
+      if (k === "constituency") return
+
+      list.push({
+        party: k.toUpperCase(),
+        candidate: data[k] || "Yet to be updated"
+      })
+
+    })
+
+    return list
+  }
+
+  const candidateList = constitutionData
+    ? buildCandidateList(constitutionData.current)
+    : []
 
   const exportSvgDataToCsv = () => {
     // 1. Select all paths that have the data-title attribute
@@ -86,23 +182,86 @@ function Tab1() {
           {/* </div> */}
         </TransformComponent>
       </TransformWrapper>
-      {constitutionData && (
+      {constitutionData && candidateList.length > 0 && (
+
+        <div className="mt-4 bg-white border rounded-xl shadow p-4">
+
+          <h4 className="font-bold text-blue-900 mb-3">
+            2026 Candidates
+          </h4>
+
+          <div className="flex items-center justify-between">
+
+            <button
+              onClick={() => setCarouselIndex((carouselIndex - 1 + candidateList.length) % candidateList.length)}
+              className="px-3 py-1 bg-gray-200 rounded"
+            >
+              ‹
+            </button>
+
+            <div className="text-center flex-1">
+
+              <div className="text-sm text-gray-500">
+                {candidateList[carouselIndex].party}
+              </div>
+
+              <div className="font-semibold text-lg">
+                {candidateList[carouselIndex].candidate}
+              </div>
+
+            </div>
+
+            <button
+              onClick={() => setCarouselIndex((carouselIndex + 1) % candidateList.length)}
+              className="px-3 py-1 bg-gray-200 rounded"
+            >
+              ›
+            </button>
+
+          </div>
+
+        </div>
+
+      )}
+      {constitutionData?.prev && (
         <div className="mt-4 p-4 bg-white rounded-xl shadow-lg border border-gray-200">
+
           <h3 className="text-lg font-bold text-blue-900 border-b pb-2 mb-3">
-            {constitutionData.con_name}
+            {constitutionData.prev.constituency}
           </h3>
+
           <div className="grid grid-cols-2 gap-y-2 text-sm">
-            <span className="text-gray-500">Candidate:</span>
-            <span className="font-semibold text-right">{constitutionData.candidate_name}</span>
+
+            <span className="text-gray-500">Winning Candidate:</span>
+            <span className="font-semibold text-right">
+              {constitutionData.prev.winning_candidate}
+            </span>
 
             <span className="text-gray-500">Party:</span>
-            <span className="font-semibold text-right">{constitutionData.party}</span>
+            <span className="font-semibold text-right">
+              {constitutionData.prev.party}
+            </span>
 
             <span className="text-gray-500">Votes:</span>
-            <span className="font-semibold text-right">{constitutionData.votes} ({constitutionData.vote_percentage})</span>
+            <span className="font-semibold text-right">
+              {constitutionData.prev.votes}
+            </span>
+
+            <span className="text-gray-500">Vote Share:</span>
+            <span className="font-semibold text-right">
+              {(constitutionData.prev.vote_share * 100).toFixed(2)}%
+            </span>
+
+            <span className="text-gray-500">Total Voters:</span>
+            <span className="font-semibold text-right">
+              {constitutionData.prev.total_voters}
+            </span>
 
             <span className="text-gray-500">Year:</span>
-            <span className="font-semibold text-right">{constitutionData.year}</span>
+            <span className="font-semibold text-right">
+              2021
+            </span>
+
           </div>
         </div>
       )}
