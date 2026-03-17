@@ -12,7 +12,7 @@ export default function ResultTabsSection() {
             <div className="md:hidden">
 
                 {/* TAB BUTTONS */}
-                <div className="flex gap-2 mb-3">
+                <div className="flex gap-2 mb-6">
                     <button
                         onClick={() => setActiveTab("map")}
                         className={`flex-1 py-2 rounded-full text-sm font-semibold border 

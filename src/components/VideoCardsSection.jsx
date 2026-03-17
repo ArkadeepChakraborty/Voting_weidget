@@ -18,8 +18,8 @@ const videos = [
     page: "Narendra Modi",
     partyname: "ভারতীয় জনতা পার্টি (Bharatiya Janata Party)",
     bidhabsova: "Kolkata",
-    thumbnail: "https://img.youtube.com/vi/lFeYU31TnQ8/hqdefault.jpg",
-    videoUrl: "https://youtu.be/lFeYU31TnQ8",
+    thumbnail: "https://img.youtube.com/vi/pkKn8q5AvsY?si=70leZFvLCpMhnm3B/hqdefault.jpg",
+    videoUrl: "https://youtu.be/pkKn8q5AvsY?si=70leZFvLCpMhnm3B",
     title: "কেন্দ্রীয় প্রকল্প নিয়ে বিজেপির সভা, উপস্থিত বহু নেতা",
     totalVotes: "150000"
   },
@@ -28,8 +28,8 @@ const videos = [
     page: "Narendra Modi",
     partyname: "ভারতীয় জনতা পার্টি (Bharatiya Janata Party)",
     bidhabsova: "Kolkata",
-    thumbnail: "https://img.youtube.com/vi/lFeYU31TnQ8/hqdefault.jpg",
-    videoUrl: "https://youtu.be/lFeYU31TnQ8",
+    thumbnail: "https://img.youtube.com/vi/0-FUhQKe-eU?si=teXONtgmdjnnUYYP/hqdefault.jpg",
+    videoUrl: "https://youtu.be/0-FUhQKe-eU?si=teXONtgmdjnnUYYP",
     title: "কেন্দ্রীয় প্রকল্প নিয়ে বিজেপির সভা, উপস্থিত বহু নেতা",
     totalVotes: "150000"
   },

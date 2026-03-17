@@ -86,6 +86,10 @@ export default function ResultBarSection() {
   return (
     <div className="w-full max-w-xl mx-auto bg-transparent rounded-xl p-4 border border-gray-400">
 
+      <h2 className="text-center font-semibold text-sm sm:text-base mb-4">
+        ২০২১ নির্বাচনের পঞ্চায়েত ফলাফল
+      </h2>
+
       {/* Header */}
       <div className="grid grid-cols-4 text-sm font-semibold text-gray-700 border-b pb-2">
         <div>Alliance/Party</div>
