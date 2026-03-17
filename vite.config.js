@@ -8,14 +8,19 @@ import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss(),svgr(),
-    // viteStaticCopy({
-    //   targets: [
-    //     {
-    //       src: "../voting_shared/election-data.js",
-    //       dest: ""
-    //     }
-    //   ]
-    // })
-  ],
+  plugins: [react(),tailwindcss(),svgr()],
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/election-index.js',
+        chunkFileNames: 'assets/election-[name].js',
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+            return 'assets/election-index.css'
+          }
+          return 'assets/[name][extname]'
+        }
+      }
+    }
+  }
 })
