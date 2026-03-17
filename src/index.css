@@ -11,14 +11,28 @@
 } */
 
 
+/* Base */
 svg path {
-  transition: fill 0.6s ease, stroke 0.3s ease, stroke-width 0.3s ease;
+  transition: all 0.25s ease;
+  transform-origin: center;
 }
 
-svg path:hover {
-  opacity: 0.85;
-  cursor: pointer;
+/* ✅ DESKTOP ONLY (hover-capable devices) */
+@media (hover: hover) and (pointer: fine) {
+  svg path:hover {
+    cursor: pointer;
+    filter: brightness(1.30);
+    stroke: #333;
+    stroke-width: 1;
+  }
 }
+
+/* ✅ ALL DEVICES (click/tap feedback) */
+svg path:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
