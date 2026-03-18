@@ -41,7 +41,7 @@ const CandidateCard = ({ candidate }) => {
     const isLeading = candidate.status === "এগিয়ে রয়েছেন";
 
     return (
-        <div className="min-w-80 sm:min-w-75 md:min-w-85 snap-center p-2">
+        <div className="min-w-80 sm:min-w-75 md:min-w-85 snap-center p-2 font-serif">
             <div className="relative bg-white rounded-lg shadow border">
 
                 {/* Status */}
@@ -125,7 +125,7 @@ export default function CandidateCarousel() {
     };
 
     return (
-        <div className="relative max-w-6xl mx-auto px-2 lg:px-8 py-8 -mb-8">
+        <div className="relative max-w-6xl mx-auto px-2 lg:px-8 py-8 -mb-8 font-serif">
 
             <h2 className="text-xl font-bold text-center mb-4">
                 Top Candidates

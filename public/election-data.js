@@ -2340,10 +2340,10 @@ window.WB_ELECTION_DATA = {
   "sheet_1": {
     "mekliganj": {
       "constituency": "Mekliganj",
-      "aitc": "Subhradip Majumder",
-      "bjp": "Sourav Das",
-      "cpim": "Shrey Banerjee",
-      "inc": "Subham Ganguly"
+      "aitc": 0,
+      "bjp": 0,
+      "cpim": 0,
+      "inc": 0
     },
     "mathabhanga": {
       "constituency": "Mathabhanga",
@@ -7887,6 +7887,65 @@ window.WB_ELECTION_DATA = {
       "cpim-vote": 0,
       "inc-vote": 0,
       "total": 0
+    }
+  },
+  "sheet_3": {
+    "1": {
+      "slno": 1,
+      "candicate_name": "Mamata Banerjee",
+      "party": "AITC",
+      "constituency": "Bhabawanipur",
+      "image_url": "https://res.cloudinary.com/dm5vwwcvl/image/upload/v1773836491/651929504_1480206913475030_346896703719646879_n_ixblo6.jpg",
+      "video_url": 0,
+      "video_title": 0
+    },
+    "2": {
+      "slno": 2,
+      "candicate_name": "Suvendu Adhikary",
+      "party": "BJP",
+      "constituency": "Nandigram",
+      "image_url": "https://res.cloudinary.com/dm5vwwcvl/image/upload/v1773836608/images_ugwabn.webp",
+      "video_url": 0,
+      "video_title": 0
+    },
+    "3": {
+      "slno": 3,
+      "candicate_name": "Bikash Ranjan Bhattacharya",
+      "party": "CPIM",
+      "constituency": "Jadavpur",
+      "image_url": "https://res.cloudinary.com/dm5vwwcvl/image/upload/v1773836728/bikash_gxt8gf.webp",
+      "video_url": "https://youtu.be/Oj75ZLa5M9g?si=pmpnqwBjGAn0WyQE",
+      "video_title": "CPIM's Bikash Ranjan Bhattacharya's speech at Jadavpur University"
+    }
+  },
+  "sheet_4": {
+    "aitc": {
+      "party": "AITC",
+      "color": "#00a651"
+    },
+    "bjp": {
+      "party": "BJP",
+      "color": "#ff9933"
+    },
+    "cpi": {
+      "party": "CPI",
+      "color": "#e53935"
+    },
+    "cpim": {
+      "party": "CPIM",
+      "color": "#e53935"
+    },
+    "inc": {
+      "party": "INC",
+      "color": "#1976d2"
+    },
+    "nota": {
+      "party": "NOTA",
+      "color": "#F4F4F4"
+    },
+    "sfi": {
+      "party": "SFI",
+      "color": "#3a3a3a"
     }
   }
 };

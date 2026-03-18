@@ -29,9 +29,9 @@ export default function HomePage() {
       <div className="absolute inset-0 backdrop-blur-xs bg-white/10"></div>
 
       <div className="relative z-8">
-        <NewsTicker />
+        {/* <NewsTicker /> */}
 
-        <ElectionBannerSection />
+        {/* <ElectionBannerSection /> */}
 
         {/* Page container */}
         <div className="max-w-5xl mx-auto px-4 py-6 space-y-4">
@@ -48,11 +48,11 @@ export default function HomePage() {
 
           {/* <VideoCardsSection /> */}
 
-          <CandidateCarousel />
+          {/* <CandidateCarousel /> */}
 
           <TwoCandidateSection />
 
-          <WestBengalNews />
+          {/* <WestBengalNews /> */}
 
         </div>
 

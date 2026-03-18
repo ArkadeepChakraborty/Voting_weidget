@@ -1,67 +1,3 @@
-// import { FaPlay } from "react-icons/fa";
-
-// const VideoCard = ({ video }) => {
-
-//   const openVideo = () => {
-//     window.open(video.videoUrl, "_blank");
-//   };
-
-//   return (
-//     <div
-//       onClick={openVideo}
-//       className="cursor-pointer min-w-65 sm:min-w-70 md:min-w-75 lg:min-w-[320px] 
-//       bg-cyan-100 rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition"
-//     >
-
-//       {/* Header */}
-//       <div className="flex items-center gap-2 p-3">
-//         <img
-//           src={video.logo}
-//           alt="logo"
-//           className="w-7 h-7 rounded-full object-cover"
-//         />
-
-//         <div className="text-xs leading-tight">
-//           <p className="font-semibold text-gray-800 mb-0.5">{video.page}</p>
-//           <p className="text-gray-500 text-[10px] mb-0.5">{video.partyname}</p>
-//           <p className="text-gray-500 text-[10px]"><span className="mr-1">বিধানসভা:</span>{video.bidhabsova}</p>
-//         </div>
-//       </div>
-
-//       {/* Thumbnail */}
-//       <div className="relative px-3">
-//         <img
-//           src={video.thumbnail}
-//           alt="video"
-//           className="w-full h-36 object-cover rounded-md"
-//         />
-
-//         <div className="absolute inset-0 flex items-center justify-center">
-//           <div className="bg-red-600 p-3 rounded-full text-white shadow-lg">
-//             <FaPlay size={14} />
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Title */}
-//       <div className="p-3">
-//         <p className="text-sm font-medium text-gray-800 leading-snug line-clamp-3">
-//           {video.title}
-//         </p>
-//         <p className="text-sm font-medium text-gray-800 leading-snug line-clamp-3">
-//           <span className="mr-1">Total Votes:</span>{video.totalVotes}
-//         </p>
-//       </div>
-
-//     </div>
-//   );
-// };
-
-// export default VideoCard;
-
-
-
-
 import { FaPlay } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
 
@@ -71,7 +7,6 @@ const VideoCard = ({ video }) => {
   const [isMobile, setIsMobile] = useState(false);
   const cardRef = useRef(null);
 
-  // Detect screen size properly (responsive)
   useEffect(() => {
     const checkScreen = () => {
       setIsMobile(window.innerWidth < 768);
@@ -79,11 +14,9 @@ const VideoCard = ({ video }) => {
 
     checkScreen();
     window.addEventListener("resize", checkScreen);
-
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
-  // Extract YouTube ID safely
   const getVideoId = (url) => {
     if (!url) return "";
     if (url.includes("youtu.be/")) {
@@ -97,20 +30,17 @@ const VideoCard = ({ video }) => {
   const videoId = getVideoId(video.videoUrl);
 
   const openVideo = () => {
-    window.open(video.videoUrl, "_blank");
+    if (video.videoUrl) {
+      window.open(video.videoUrl, "_blank");
+    }
   };
 
-  // Intersection Observer (ONLY for mobile)
   useEffect(() => {
-    if (!isMobile) return;
+    if (!isMobile || video.type !== "video") return;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
-      },
-      {
-        threshold: 0.75,  
-      }
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.7 }
     );
 
     if (cardRef.current) observer.observe(cardRef.current);
@@ -118,77 +48,122 @@ const VideoCard = ({ video }) => {
     return () => {
       if (cardRef.current) observer.unobserve(cardRef.current);
     };
-  }, [isMobile]);
+  }, [isMobile, video.type]);
 
-  // FINAL LOGIC
-  const shouldPlay = isMobile ? isVisible : hover;
+  const shouldPlay =
+    video.type === "video" && (isMobile ? isVisible : hover);
 
   return (
     <div
       ref={cardRef}
-      onClick={(e) => {
-        if (!shouldPlay) openVideo();
+      onClick={() => {
+        if (video.type === "video" && !shouldPlay) openVideo();
       }}
       onMouseEnter={() => !isMobile && setHover(true)}
       onMouseLeave={() => !isMobile && setHover(false)}
-      className="snap-center cursor-pointer min-w-65 sm:min-w-70 md:min-w-75 lg:min-w-[320px]
-      bg-cyan-100 rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition"
+      className="snap-center cursor-pointer 
+      min-w-65 sm:min-w-70 md:min-w-75 lg:min-w-[320px]
+      aspect-square
+      bg-white rounded-xl shadow-md overflow-hidden 
+      flex flex-col hover:shadow-2xl transition duration-300"
     >
 
-      <div className="flex items-center gap-2 p-3">
-        <img
-          src={video.logo}
-          alt="logo"
-          className="w-7 h-7 rounded-full object-cover"
-        />
-
-        <div className="text-xs leading-tight">
-          <p className="font-semibold text-gray-800 mb-0.5">{video.page}</p>
-          <p className="text-gray-500 text-[10px] mb-0.5">{video.partyname}</p>
-          <p className="text-gray-500 text-[10px]">
-            <span className="mr-1">বিধানসভা:</span>{video.bidhabsova}
-          </p>
-        </div>
-      </div>
-
-      {/* Video Area */}
-      <div className="relative px-3">
-
-        {!shouldPlay ? (
-          <img
-            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-            alt="video"
-            className="w-full h-36 object-cover rounded-md"
-          />
-        ) : (
-          <iframe
-            key={videoId} // prevents reload glitches
-            className="w-full h-36 rounded-md"
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&playsinline=1`}
-            allow="autoplay; encrypted-media"
-          />
-        )}
-
-        {!shouldPlay && (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-red-600 p-3 rounded-full text-white shadow-lg">
-              <FaPlay size={14} />
+      {/* ================= VIDEO CARD ================= */}
+      {video.type === "video" ? (
+        <>
+          {/* HEADER */}
+          <div className="flex items-center gap-2 px-3 py-2">
+            <img
+              src={video.logo}
+              alt="logo"
+              className="w-8 h-8 rounded-full object-cover"
+            />
+            <div className="text-xs leading-tight">
+              <p className="font-semibold text-sm">{video.name}</p>
+              <p className="text-[11px] text-gray-500">
+                {video.constituency}
+              </p>
+              <p className="text-[11px] text-gray-500">
+                {video.party}
+              </p>
             </div>
           </div>
-        )}
 
-      </div>
+          {/* VIDEO */}
+          <div className="h-[50%] px-3 pt-2">
+            <div className="relative w-full h-full rounded-lg overflow-hidden bg-black">
 
-      <div className="p-3">
-        <p className="text-sm font-medium text-gray-800 leading-snug line-clamp-3">
-          {video.title}
-        </p>
+              {!shouldPlay ? (
+                <img
+                  src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0`}
+                  allow="autoplay"
+                />
+              )}
 
-        <p className="text-sm font-medium text-gray-800 leading-snug line-clamp-3">
-          <span className="mr-1">Total Votes:</span>{video.totalVotes}
-        </p>
-      </div>
+              {/* Play Button */}
+              {!shouldPlay && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-red-600 p-4 rounded-full text-white shadow-lg">
+                    <FaPlay size={16} />
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
 
+          {/* TITLE */}
+          <div className="h-[35%] px-3 pb-3 flex items-center">
+            <p className="text-sm font-medium leading-snug line-clamp-3">
+              {video.title}
+            </p>
+          </div>
+        </>
+      ) : (
+        /* ================= IMAGE CARD ================= */
+        <div className="relative flex flex-1">
+
+          {/* LEFT IMAGE */}
+          <div className="w-1/2 flex flex-col items-center justify-center bg-gray-50">
+            <img
+              src={video.thumbnail}
+              className="w-28 h-28 rounded-full object-cover border-4 border-white shadow-md"
+            />
+            <p className="text-sm font-semibold mt-2 text-center px-2">
+              {video.name}
+            </p>
+          </div>
+
+          {/* DIVIDER */}
+          <div className="absolute left-1/2 top-8 bottom-8 w-0.5 bg-gray-200"></div>
+
+          {/* RIGHT CONTENT */}
+          <div className="w-1/2 p-4 flex flex-col justify-center font-serif">
+
+            <div className="flex items-center gap-2 mb-3">
+              <img
+                src={video.logo}
+                className="w-10 h-10 rounded-full object-cover"
+              />
+              <p className="text-sm font-semibold">{video.party}</p>
+            </div>
+
+            <p className="text-xs text-gray-500 mb-1">
+              {video.constituency}
+            </p>
+
+            <p className="text-sm text-gray-700 leading-snug line-clamp-3">
+              Key candidate from {video.constituency}. Strong local presence and active political engagement.
+            </p>
+
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -14,7 +14,7 @@ export default function ResultTabsSection() {
 
         <button
           onClick={() => setActiveTab("map")}
-          className={`flex-1 py-2 rounded-full text-sm font-semibold border transition
+          className={`flex-1 py-2 rounded-full text-sm font-semibold border transition font-serif
             ${activeTab === "map"
               ? "bg-orange-400 text-white"
               : "bg-gray-200 text-black hover:bg-gray-300"
@@ -25,7 +25,7 @@ export default function ResultTabsSection() {
 
         <button
           onClick={() => setActiveTab("data")}
-          className={`flex-1 py-2 rounded-full text-sm font-semibold border transition
+          className={`flex-1 py-2 rounded-full text-sm font-semibold border transition font-serif
             ${activeTab === "data"
               ? "bg-orange-400 text-white"
               : "bg-gray-200 text-black hover:bg-gray-300"

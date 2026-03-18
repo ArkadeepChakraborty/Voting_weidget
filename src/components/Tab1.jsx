@@ -282,6 +282,7 @@ import React, { useState, useEffect } from 'react'
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import NewWbAssembly from '../assets/new_wb_assembly_1.svg?react';
 import { reHashdata } from '../../utils/reHashConsticuencyData';
+import { getPartyLogo } from '../utils/getPartyLogo';
 
 
 function Tab1() {
@@ -291,33 +292,33 @@ function Tab1() {
   const [selectedSeat, setSelectedSeat] = useState(null);
 
   useEffect(() => {
-  const applyColors = () => {
-    const data = window.WB_ELECTION_DATA?.sheet_0;
-    if (!data) return;
+    const applyColors = () => {
+      const data = window.WB_ELECTION_DATA?.sheet_0;
+      if (!data) return;
 
-    const partyColor = {
-      AITC: "#00a651",
-      BJP: "#ff9933",
-      CPI: "#e53935",
-      CPIM: "#e53935",
-      INC: "#1976d2"
+      const partyColor = {
+        AITC: "#00a651",
+        BJP: "#ff9933",
+        CPI: "#e53935",
+        CPIM: "#e53935",
+        INC: "#1976d2"
+      };
+
+      Object.entries(data).forEach(([seat, r]) => {
+        const el = document.querySelector(`[sub_link="${r.constituency}"]`);
+        if (el) {
+          el.style.fill = partyColor[r.party] || "#cccccc";
+        }
+      });
     };
 
-    Object.entries(data).forEach(([seat, r]) => {
-      const el = document.querySelector(`[sub_link="${r.constituency}"]`);
-      if (el) {
-        el.style.fill = partyColor[r.party] || "#cccccc";
-      }
-    });
-  };
+    // ✅ Wait for full DOM + SVG render
+    const timeout = setTimeout(() => {
+      applyColors();
+    }, 500); // <-- key fix
 
-  // ✅ Wait for full DOM + SVG render
-  const timeout = setTimeout(() => {
-    applyColors();
-  }, 500); // <-- key fix
-
-  return () => clearTimeout(timeout);
-}, []);
+    return () => clearTimeout(timeout);
+  }, []);
 
   useEffect(() => {
 
@@ -462,7 +463,7 @@ function Tab1() {
       {constitutionData && candidateList.length > 0 && (
         <div className="bg-white border rounded-xl shadow p-4">
 
-          <h4 className="font-bold text-blue-900 mb-3">
+          <h4 className="font-bold text-blue-900 mb-3 font-serif">
             2026 Candidates
           </h4>
 
@@ -480,7 +481,7 @@ function Tab1() {
               ‹
             </button>
 
-            <div className="text-center flex-1">
+            <div className="text-center flex-1 font-serif">
               <div className="text-sm text-gray-500">
                 {candidateList[carouselIndex].party}
               </div>
@@ -507,45 +508,36 @@ function Tab1() {
 
       {/* RESULT CARD */}
       {constitutionData?.prev && (
-        <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-200">
+        <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-200 font-serif">
 
-          <h3 className="text-lg font-bold text-blue-900 border-b pb-2 mb-3">
+          {/* Constituency */}
+          <h3 className="text-lg font-bold text-blue-900 border-b pb-2 mb-4 text-center">
             {constitutionData.prev.constituency}
           </h3>
 
-          <div className="grid grid-cols-2 gap-y-2 text-sm">
+          {/* Candidate + Logo */}
+          <div className="flex items-center justify-center gap-3 mb-3">
 
-            <span className="text-gray-500">Winning Candidate:</span>
-            <span className="font-semibold text-right">
+            <p className="text-base font-semibold">
               {constitutionData.prev.winning_candidate}
-            </span>
+            </p>
 
-            <span className="text-gray-500">Party:</span>
-            <span className="font-semibold text-right">
-              {constitutionData.prev.party}
-            </span>
-
-            <span className="text-gray-500">Votes:</span>
-            <span className="font-semibold text-right">
-              {constitutionData.prev.votes}
-            </span>
-
-            <span className="text-gray-500">Vote Share:</span>
-            <span className="font-semibold text-right">
-              {(constitutionData.prev.vote_share * 100).toFixed(2)}%
-            </span>
-
-            <span className="text-gray-500">Total Voters:</span>
-            <span className="font-semibold text-right">
-              {constitutionData.prev.total_voters}
-            </span>
-
-            <span className="text-gray-500">Year:</span>
-            <span className="font-semibold text-right">
-              2021
-            </span>
+            <img
+              src={getPartyLogo(constitutionData.prev.party)}
+              alt="party logo"
+              className="w-8 h-8 rounded-full object-cover border"
+            />
 
           </div>
+
+          {/* Votes */}
+          <p className="text-center text-sm text-gray-600">
+            Votes:{" "}
+            <span className="font-semibold text-gray-800">
+              {constitutionData.prev.votes}
+            </span>
+          </p>
+
         </div>
       )}
 
