@@ -17,7 +17,7 @@ svg path {
   transform-origin: center;
 }
 
-/* ✅ DESKTOP ONLY (hover-capable devices) */
+/* DESKTOP ONLY */
 @media (hover: hover) and (pointer: fine) {
   svg path:hover {
     cursor: pointer;
@@ -27,7 +27,7 @@ svg path {
   }
 }
 
-/* ✅ ALL DEVICES (click/tap feedback) */
+/* ALL DEVICES */
 svg path:active {
   transform: scale(0.98);
   opacity: 0.9;

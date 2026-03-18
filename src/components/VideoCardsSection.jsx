@@ -68,15 +68,29 @@ const VideoCardsSection = () => {
   }, []);
 
   const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -350, behavior: "smooth" });
+    const container = scrollRef.current;
+    const card = container.querySelector("div"); // first card
+    const cardWidth = card.offsetWidth + 16; // 16 = gap-4
+
+    container.scrollBy({
+      left: -cardWidth,
+      behavior: "smooth",
+    });
   };
 
   const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 350, behavior: "smooth" });
+    const container = scrollRef.current;
+    const card = container.querySelector("div");
+    const cardWidth = card.offsetWidth + 16;
+
+    container.scrollBy({
+      left: cardWidth,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <div className="relative px-4 py-4">
+    <div className="relative w-full px-2 md:px-4 py-4">
 
       <h2 className="text-lg font-bold mb-3 text-center">
         Super Stars
@@ -86,9 +100,9 @@ const VideoCardsSection = () => {
       {showLeft && (
         <button
           onClick={scrollLeft}
-          className=" -ml-8 hidden md:hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-30 px-3 py-2 rounded-r-md"
+          className="absolute left-0 md:left-1 lg:-left-6 top-1/2 -translate-y-1/2 z-30 p-2 bg-white/80 backdrop-blur rounded-full shadow-md"
         >
-          <FaRegCaretSquareLeft size={30} />
+          <FaRegCaretSquareLeft className="text-xl md:text-2xl lg:text-3xl" />
         </button>
       )}
 
@@ -96,7 +110,7 @@ const VideoCardsSection = () => {
       <div
         ref={scrollRef}
         onScroll={checkScroll}
-        className="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide pb-2"
+        className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide pb-2 px-1 md:px-4"
       >
         {videos.map((video, index) => (
           <VideoCard key={index} video={video} />
@@ -107,9 +121,9 @@ const VideoCardsSection = () => {
       {showRight && (
         <button
           onClick={scrollRight}
-          className="-mr-8 hidden md:hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 z-30 px-3 py-2 rounded-l-md"
+          className="absolute right-0 md:right-1 lg:-right-6 top-1/2 -translate-y-1/2 z-30 p-2 bg-white/80 backdrop-blur rounded-full shadow-md"
         >
-          <FaRegCaretSquareRight size={30} />
+          <FaRegCaretSquareRight className="text-xl md:text-2xl lg:text-3xl" />
         </button>
       )}
 

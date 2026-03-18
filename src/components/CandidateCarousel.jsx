@@ -115,11 +115,13 @@ export default function CandidateCarousel() {
     }, []);
 
     const scrollLeft = () => {
-        scrollRef.current.scrollBy({ left: -350, behavior: "smooth" });
+        const width = scrollRef.current.clientWidth;
+        scrollRef.current.scrollBy({ left: -width * 0.8, behavior: "smooth" });
     };
 
     const scrollRight = () => {
-        scrollRef.current.scrollBy({ left: 350, behavior: "smooth" });
+        const width = scrollRef.current.clientWidth;
+        scrollRef.current.scrollBy({ left: width * 0.8, behavior: "smooth" });
     };
 
     return (
@@ -133,9 +135,9 @@ export default function CandidateCarousel() {
             {showLeft && (
                 <button
                     onClick={scrollLeft}
-                    className=" -ml-4 hidden md:hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-30 px-3 py-2 rounded-r-md"
+                    className="absolute left-0 md:left-1 lg:-left-6 top-1/2 -translate-y-1/2 z-30 p-2 bg-white/80 backdrop-blur rounded-full shadow-md"
                 >
-                    <FaRegCaretSquareLeft size={30} />
+                    <FaRegCaretSquareLeft className="text-xl md:text-2xl lg:text-3xl" />
                 </button>
             )}
 
@@ -143,7 +145,7 @@ export default function CandidateCarousel() {
             <div
                 ref={scrollRef}
                 onScroll={checkScroll}
-                className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide"
+                className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide px-8 md:px-10"
             >
                 {candidates.map((candidate) => (
                     <CandidateCard key={candidate.id} candidate={candidate} />
@@ -154,9 +156,9 @@ export default function CandidateCarousel() {
             {showRight && (
                 <button
                     onClick={scrollRight}
-                    className=" -mr-4 hidden md:hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 z-30 px-3 py-2 rounded-l-md"
+                    className="absolute right-0 md:right-1 lg:-right-6 top-1/2 -translate-y-1/2 z-30 p-2 bg-white/80 backdrop-blur rounded-full shadow-md"
                 >
-                    <FaRegCaretSquareRight size={30} />
+                    <FaRegCaretSquareRight className="text-xl md:text-2xl lg:text-3xl" />
                 </button>
             )}
         </div>

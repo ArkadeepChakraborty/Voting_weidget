@@ -8,6 +8,7 @@ import ResultPieBarSection from "../components/ResultPieBarSection";
 import ElectionBannerSection from "../components/ElectionBannerSection";
 import DonutPieChartSection from "../components/DonutPieChartSection";
 import ResultTabsSection from "../components/ResultTabsSection";
+import WestBengalNews from "../components/WestBengalNews";
 
 export default function HomePage() {
   const parties = [
@@ -50,6 +51,8 @@ export default function HomePage() {
           <CandidateCarousel />
 
           <TwoCandidateSection />
+
+          <WestBengalNews />
 
         </div>
 
