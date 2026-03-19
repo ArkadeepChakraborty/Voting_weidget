@@ -308,18 +308,22 @@ function Tab1() {
       const data = window.WB_ELECTION_DATA?.sheet_0;
       if (!data) return;
 
+      const root = window.__SHADOW_ROOT__ || document;
+
       Object.entries(data).forEach(([seat, r]) => {
-        const el = document.querySelector(`[sub_link="${r.constituency}"]`);
+        const el = root.querySelector(`[sub_link="${r.constituency}"]`);
+
         if (el) {
           el.style.fill = partyColor[r.party] || "#cccccc";
+        } else {
+          console.log("Not found:", r.constituency);
         }
       });
     };
 
-    // ✅ Wait for full DOM + SVG render
     const timeout = setTimeout(() => {
       applyColors();
-    }, 500); // <-- key fix
+    }, 500);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -479,7 +483,7 @@ function Tab1() {
 
           <TransformWrapper
             initialScale={0.8}
-            minScale={0.5}
+            minScale={0.1}
             maxScale={10}
             initialPositionX={100}
           >

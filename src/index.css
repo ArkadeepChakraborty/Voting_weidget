@@ -10,6 +10,9 @@
   background-attachment: fixed;
 } */
 
+* {
+  box-sizing: border-box;
+}
 
 /* Base */
 svg path {
