@@ -320,7 +320,7 @@ export default function ResultPieBarSection() {
   const data = electionData[activeYear];
 
   return (
-    <div className="w-full max-w-xl mx-auto bg-white rounded-xl p-4 border shadow-sm">
+    <div className="w-full max-w-xl mx-auto bg-white rounded-xl p-4 border shadow-sm font-serif">
 
       {/* TITLE */}
       <h2 className="text-lg font-bold text-red-600 mb-3">

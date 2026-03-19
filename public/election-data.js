@@ -11,7 +11,7 @@ window.WB_ELECTION_DATA = {
     "mathabhanga": {
       "constituency": "Mathabhanga",
       "winning_candidate": "Sushil Barman",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 113249,
       "vote_share": 0.5287,
       "total_voters": 214203
@@ -19,7 +19,7 @@ window.WB_ELECTION_DATA = {
     "cooch_behar_uttar": {
       "constituency": "Cooch Behar Uttar",
       "winning_candidate": "SUKUMAR ROY",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 120483,
       "vote_share": 0.494,
       "total_voters": 243916
@@ -27,7 +27,7 @@ window.WB_ELECTION_DATA = {
     "cooch_behar_dakshin": {
       "constituency": "Cooch Behar Dakshin",
       "winning_candidate": "Nikhil Ranjan Dey",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 91560,
       "vote_share": 0.4683,
       "total_voters": 195505
@@ -35,7 +35,7 @@ window.WB_ELECTION_DATA = {
     "sitalkuchi": {
       "constituency": "Sitalkuchi",
       "winning_candidate": "Baren Chandra Barman",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 124955,
       "vote_share": 0.508,
       "total_voters": 245966
@@ -43,7 +43,7 @@ window.WB_ELECTION_DATA = {
     "sitai": {
       "constituency": "Sitai",
       "winning_candidate": "JAGADISH CHANDRA BARMA BASUNIA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 117908,
       "vote_share": 0.4942,
       "total_voters": 238578
@@ -51,7 +51,7 @@ window.WB_ELECTION_DATA = {
     "dinhata": {
       "constituency": "Dinhata",
       "winning_candidate": "NISITH PRAMANIK",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 116035,
       "vote_share": 0.476,
       "total_voters": 243751
@@ -59,7 +59,7 @@ window.WB_ELECTION_DATA = {
     "natabari": {
       "constituency": "Natabari",
       "winning_candidate": "Mihir Goswami",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 111743,
       "vote_share": 0.5145,
       "total_voters": 217173
@@ -67,7 +67,7 @@ window.WB_ELECTION_DATA = {
     "tufanganj": {
       "constituency": "Tufanganj",
       "winning_candidate": "Malati Rava Roy",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 114503,
       "vote_share": 0.5469,
       "total_voters": 209378
@@ -75,7 +75,7 @@ window.WB_ELECTION_DATA = {
     "kumargram": {
       "constituency": "Kumargram",
       "winning_candidate": "MANOJ KUMAR ORAON",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 111974,
       "vote_share": 0.4816,
       "total_voters": 232489
@@ -83,7 +83,7 @@ window.WB_ELECTION_DATA = {
     "kalchini": {
       "constituency": "Kalchini",
       "winning_candidate": "BISHAL LAMA",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 103104,
       "vote_share": 0.5265,
       "total_voters": 195815
@@ -91,7 +91,7 @@ window.WB_ELECTION_DATA = {
     "alipurduars": {
       "constituency": "Alipurduars",
       "winning_candidate": "SUMAN KANJILAL",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 107333,
       "vote_share": 0.4819,
       "total_voters": 222732
@@ -99,7 +99,7 @@ window.WB_ELECTION_DATA = {
     "falakata": {
       "constituency": "Falakata",
       "winning_candidate": "DIPAK BARMAN",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 102993,
       "vote_share": 0.4671,
       "total_voters": 220500
@@ -107,7 +107,7 @@ window.WB_ELECTION_DATA = {
     "madarihat": {
       "constituency": "Madarihat",
       "winning_candidate": "MANOJ TIGGA",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 90718,
       "vote_share": 0.5435,
       "total_voters": 166920
@@ -115,7 +115,7 @@ window.WB_ELECTION_DATA = {
     "dhupguri": {
       "constituency": "Dhupguri",
       "winning_candidate": "BISHNU PADA RAY",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 104688,
       "vote_share": 0.4565,
       "total_voters": 229323
@@ -123,7 +123,7 @@ window.WB_ELECTION_DATA = {
     "maynaguri": {
       "constituency": "Maynaguri",
       "winning_candidate": "Kaushik Roy",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 115306,
       "vote_share": 0.4884,
       "total_voters": 236093
@@ -147,7 +147,7 @@ window.WB_ELECTION_DATA = {
     "dabgram-fulbari": {
       "constituency": "Dabgram-Fulbari",
       "winning_candidate": "Sikha Chatterjee",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 129088,
       "vote_share": 0.4985,
       "total_voters": 258969
@@ -163,7 +163,7 @@ window.WB_ELECTION_DATA = {
     "nagrakata": {
       "constituency": "Nagrakata",
       "winning_candidate": "PUNA BHENGRA",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 94722,
       "vote_share": 0.4955,
       "total_voters": 191169
@@ -171,7 +171,7 @@ window.WB_ELECTION_DATA = {
     "kalimpong": {
       "constituency": "Kalimpong",
       "winning_candidate": "RUDEN SADA LEPCHA",
-      "party": "AITC",
+      "party": "BGMP",
       "votes": 58206,
       "vote_share": 0.3759,
       "total_voters": 154863
@@ -179,7 +179,7 @@ window.WB_ELECTION_DATA = {
     "darjeeling": {
       "constituency": "Darjeeling",
       "winning_candidate": "NEERAJ TAMANG ZIMBA",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 68907,
       "vote_share": 0.4088,
       "total_voters": 168575
@@ -187,7 +187,7 @@ window.WB_ELECTION_DATA = {
     "kurseong": {
       "constituency": "Kurseong",
       "winning_candidate": "Bishnu Prasad Sharma (alias B.P. Bajgain)",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 73475,
       "vote_share": 0.4186,
       "total_voters": 175545
@@ -195,7 +195,7 @@ window.WB_ELECTION_DATA = {
     "matigara-naxalbari": {
       "constituency": "Matigara-naxalbari",
       "winning_candidate": "Anandamay Barman",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 139785,
       "vote_share": 0.581,
       "total_voters": 240591
@@ -203,7 +203,7 @@ window.WB_ELECTION_DATA = {
     "siliguri": {
       "constituency": "Siliguri",
       "winning_candidate": "Sankar Ghosh",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 89370,
       "vote_share": 0.5003,
       "total_voters": 178650
@@ -211,7 +211,7 @@ window.WB_ELECTION_DATA = {
     "phansidewa": {
       "constituency": "Phansidewa",
       "winning_candidate": "Durga Murmu",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 105651,
       "vote_share": 0.5089,
       "total_voters": 207590
@@ -219,7 +219,7 @@ window.WB_ELECTION_DATA = {
     "chopra": {
       "constituency": "Chopra",
       "winning_candidate": "HAMIDUL RAHAMAN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 124923,
       "vote_share": 0.612,
       "total_voters": 204110
@@ -227,7 +227,7 @@ window.WB_ELECTION_DATA = {
     "islampur": {
       "constituency": "Islampur",
       "winning_candidate": "ABDUL KARIM CHOWDHARY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 100131,
       "vote_share": 0.5891,
       "total_voters": 169974
@@ -235,7 +235,7 @@ window.WB_ELECTION_DATA = {
     "goalpokhar": {
       "constituency": "Goalpokhar",
       "winning_candidate": "MD. GHULAM RABBANI",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 105649,
       "vote_share": 0.654,
       "total_voters": 161535
@@ -243,7 +243,7 @@ window.WB_ELECTION_DATA = {
     "chakulia": {
       "constituency": "Chakulia",
       "winning_candidate": "AZAD MINHAJUL ARFIN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 86311,
       "vote_share": 0.4978,
       "total_voters": 173400
@@ -251,7 +251,7 @@ window.WB_ELECTION_DATA = {
     "karandighi": {
       "constituency": "Karandighi",
       "winning_candidate": "GOUTAM PAUL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 116594,
       "vote_share": 0.547,
       "total_voters": 213136
@@ -259,7 +259,7 @@ window.WB_ELECTION_DATA = {
     "hemtabad": {
       "constituency": "Hemtabad",
       "winning_candidate": "SATYAJIT BARMAN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 116425,
       "vote_share": 0.5214,
       "total_voters": 223301
@@ -267,7 +267,7 @@ window.WB_ELECTION_DATA = {
     "kaliaganj": {
       "constituency": "Kaliaganj",
       "winning_candidate": "SOUMEN ROY",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 116768,
       "vote_share": 0.4871,
       "total_voters": 239726
@@ -275,7 +275,7 @@ window.WB_ELECTION_DATA = {
     "raiganj": {
       "constituency": "Raiganj",
       "winning_candidate": "KRISHNA KALYANI",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 79775,
       "vote_share": 0.4944,
       "total_voters": 161347
@@ -283,7 +283,7 @@ window.WB_ELECTION_DATA = {
     "itahar": {
       "constituency": "Itahar",
       "winning_candidate": "MOSARAF HUSSEN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 114645,
       "vote_share": 0.591,
       "total_voters": 193986
@@ -291,7 +291,7 @@ window.WB_ELECTION_DATA = {
     "kushmandi": {
       "constituency": "Kushmandi",
       "winning_candidate": "REKHA ROY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 89968,
       "vote_share": 0.4888,
       "total_voters": 184075
@@ -299,7 +299,7 @@ window.WB_ELECTION_DATA = {
     "kumarganj": {
       "constituency": "Kumarganj",
       "winning_candidate": "TORAF HOSSAIN MANDAL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 89763,
       "vote_share": 0.5252,
       "total_voters": 170928
@@ -307,7 +307,7 @@ window.WB_ELECTION_DATA = {
     "balurghat": {
       "constituency": "Balurghat",
       "winning_candidate": "Ashok Kumar Lahiri",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 72129,
       "vote_share": 0.4742,
       "total_voters": 152092
@@ -315,15 +315,15 @@ window.WB_ELECTION_DATA = {
     "tapan": {
       "constituency": "Tapan",
       "winning_candidate": "BUDHRAI TUDU",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 84381,
       "vote_share": 0.4529,
       "total_voters": 186309
     },
     "gangarampur": {
       "constituency": "Gangarampur",
-      "winning_candidate": "SATYENDRA NATH  RAY",
-      "party": "CPIM",
+      "winning_candidate": "SATYENDRA NATH RAY",
+      "party": "BJP",
       "votes": 88724,
       "vote_share": 0.4682,
       "total_voters": 189482
@@ -331,7 +331,7 @@ window.WB_ELECTION_DATA = {
     "harirampur": {
       "constituency": "Harirampur",
       "winning_candidate": "BIPLAB MITRA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 96131,
       "vote_share": 0.5123,
       "total_voters": 187642
@@ -339,7 +339,7 @@ window.WB_ELECTION_DATA = {
     "habibpur": {
       "constituency": "Habibpur",
       "winning_candidate": "JOYEL MURMU",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 94075,
       "vote_share": 0.4752,
       "total_voters": 197989
@@ -347,7 +347,7 @@ window.WB_ELECTION_DATA = {
     "gazole": {
       "constituency": "Gazole",
       "winning_candidate": "CHINMOY DEB BARMAN",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 100655,
       "vote_share": 0.455,
       "total_voters": 221214
@@ -355,7 +355,7 @@ window.WB_ELECTION_DATA = {
     "chanchal": {
       "constituency": "Chanchal",
       "winning_candidate": "Nihar Ranjan Ghosh",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 115966,
       "vote_share": 0.5808,
       "total_voters": 199679
@@ -363,7 +363,7 @@ window.WB_ELECTION_DATA = {
     "harischandrapur": {
       "constituency": "Harischandrapur",
       "winning_candidate": "TAJMUL HOSSAIN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 122527,
       "vote_share": 0.6031,
       "total_voters": 203153
@@ -371,7 +371,7 @@ window.WB_ELECTION_DATA = {
     "malatipur": {
       "constituency": "Malatipur",
       "winning_candidate": "ABDUR RAHIM BOXI",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 126157,
       "vote_share": 0.6802,
       "total_voters": 185484
@@ -379,7 +379,7 @@ window.WB_ELECTION_DATA = {
     "ratua": {
       "constituency": "Ratua",
       "winning_candidate": "Samar Mukherjee",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 130674,
       "vote_share": 0.5963,
       "total_voters": 219148
@@ -387,7 +387,7 @@ window.WB_ELECTION_DATA = {
     "manickchak": {
       "constituency": "Manickchak",
       "winning_candidate": "SABITRI MITRA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 110234,
       "vote_share": 0.5326,
       "total_voters": 206991
@@ -395,7 +395,7 @@ window.WB_ELECTION_DATA = {
     "maldaha": {
       "constituency": "Maldaha",
       "winning_candidate": "Gopal Chandra Saha",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 93398,
       "vote_share": 0.4523,
       "total_voters": 206489
@@ -403,7 +403,7 @@ window.WB_ELECTION_DATA = {
     "englishbazar": {
       "constituency": "Englishbazar",
       "winning_candidate": "SREERUPA MITRA CHAUDHURY(NIRBHOY DIDI)",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 107755,
       "vote_share": 0.4996,
       "total_voters": 215675
@@ -451,7 +451,7 @@ window.WB_ELECTION_DATA = {
     "suti": {
       "constituency": "Suti",
       "winning_candidate": "NA",
-      "party": "AITC",
+      "party": "NA",
       "votes": "NA",
       "vote_share": "NA",
       "total_voters": "NA"
@@ -459,7 +459,7 @@ window.WB_ELECTION_DATA = {
     "jangipur": {
       "constituency": "Jangipur",
       "winning_candidate": "NA",
-      "party": "AITC",
+      "party": "NA",
       "votes": "NA",
       "vote_share": "NA",
       "total_voters": "NA"
@@ -467,7 +467,7 @@ window.WB_ELECTION_DATA = {
     "raghunathganj": {
       "constituency": "Raghunathganj",
       "winning_candidate": "NA",
-      "party": "AITC",
+      "party": "NA",
       "votes": "NA",
       "vote_share": "NA",
       "total_voters": "NA"
@@ -507,7 +507,7 @@ window.WB_ELECTION_DATA = {
     "murshidabad": {
       "constituency": "Murshidabad",
       "winning_candidate": "GOURI SANKAR GHOSH",
-      "party": "AITC",
+      "party": "BJP",
       "votes": 95967,
       "vote_share": 0.4186,
       "total_voters": 229231
@@ -547,7 +547,7 @@ window.WB_ELECTION_DATA = {
     "bharatpur": {
       "constituency": "Bharatpur",
       "winning_candidate": "HUMAYUN KABIR",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 96226,
       "vote_share": 0.509,
       "total_voters": 189047
@@ -555,7 +555,7 @@ window.WB_ELECTION_DATA = {
     "rejinagar": {
       "constituency": "Rejinagar",
       "winning_candidate": "RABIUL ALAM CHOWDHURY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 118494,
       "vote_share": 0.5631,
       "total_voters": 210445
@@ -563,7 +563,7 @@ window.WB_ELECTION_DATA = {
     "beldanga": {
       "constituency": "Beldanga",
       "winning_candidate": "HASANUZZAMAN SK",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 112862,
       "vote_share": 0.5519,
       "total_voters": 204511
@@ -571,7 +571,7 @@ window.WB_ELECTION_DATA = {
     "baharampur": {
       "constituency": "Baharampur",
       "winning_candidate": "Subrata Maitra (Kanchan)",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 89340,
       "vote_share": 0.4521,
       "total_voters": 197607
@@ -579,7 +579,7 @@ window.WB_ELECTION_DATA = {
     "hariharpara": {
       "constituency": "Hariharpara",
       "winning_candidate": "NIAMOT SHEIKH",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 102660,
       "vote_share": 0.4751,
       "total_voters": 216075
@@ -587,7 +587,7 @@ window.WB_ELECTION_DATA = {
     "nowda": {
       "constituency": "Nowda",
       "winning_candidate": "SAHINA MOMTAZ KHAN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 117684,
       "vote_share": 0.5816,
       "total_voters": 202349
@@ -595,7 +595,7 @@ window.WB_ELECTION_DATA = {
     "domkal": {
       "constituency": "Domkal",
       "winning_candidate": "JAFIKUL ISLAM",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 127671,
       "vote_share": 0.5645,
       "total_voters": 226183
@@ -603,15 +603,23 @@ window.WB_ELECTION_DATA = {
     "jalangi": {
       "constituency": "Jalangi",
       "winning_candidate": "ABDUR RAZZAK",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 123840,
       "vote_share": 0.5574,
       "total_voters": 222167
     },
+    "karimpur": {
+      "constituency": "Karimpur",
+      "winning_candidate": "NA",
+      "party": "NA",
+      "votes": "NA",
+      "vote_share": "NA",
+      "total_voters": "NA"
+    },
     "tehatta": {
       "constituency": "Tehatta",
       "winning_candidate": "Tapas Kumar Saha",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 97848,
       "vote_share": 0.4486,
       "total_voters": 218109
@@ -619,7 +627,7 @@ window.WB_ELECTION_DATA = {
     "palashipara": {
       "constituency": "Palashipara",
       "winning_candidate": "Dr. Manik Bhattacharya",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 110274,
       "vote_share": 0.5422,
       "total_voters": 203385
@@ -627,7 +635,7 @@ window.WB_ELECTION_DATA = {
     "kaliganj": {
       "constituency": "Kaliganj",
       "winning_candidate": "NASIRUDDIN AHAMED (LAL)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 111696,
       "vote_share": 0.5335,
       "total_voters": 209379
@@ -635,7 +643,7 @@ window.WB_ELECTION_DATA = {
     "nakashipara": {
       "constituency": "Nakashipara",
       "winning_candidate": "Kallol Khan",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 104812,
       "vote_share": 0.5001,
       "total_voters": 209570
@@ -643,7 +651,7 @@ window.WB_ELECTION_DATA = {
     "chapra": {
       "constituency": "Chapra",
       "winning_candidate": "RUKBANUR RAHMAN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 73866,
       "vote_share": 0.3465,
       "total_voters": 213175
@@ -651,7 +659,7 @@ window.WB_ELECTION_DATA = {
     "krishnanagar_uttar": {
       "constituency": "Krishnanagar Uttar",
       "winning_candidate": "MUKUL ROY",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 109357,
       "vote_share": 0.5419,
       "total_voters": 201805
@@ -659,7 +667,7 @@ window.WB_ELECTION_DATA = {
     "nabadwip": {
       "constituency": "Nabadwip",
       "winning_candidate": "PUNDARIKAKSHYA SAHA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 102170,
       "vote_share": 0.4852,
       "total_voters": 210589
@@ -667,7 +675,7 @@ window.WB_ELECTION_DATA = {
     "krishnanagar_dakshin": {
       "constituency": "Krishnanagar Dakshin",
       "winning_candidate": "UJJAL BISWAS",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 91738,
       "vote_share": 0.4688,
       "total_voters": 195685
@@ -675,7 +683,7 @@ window.WB_ELECTION_DATA = {
     "santipur": {
       "constituency": "Santipur",
       "winning_candidate": "JAGANNATH SARKAR",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 109722,
       "vote_share": 0.4994,
       "total_voters": 219692
@@ -683,7 +691,7 @@ window.WB_ELECTION_DATA = {
     "ranaghat_uttar_paschim": {
       "constituency": "Ranaghat Uttar paschim",
       "winning_candidate": "PARTHASARATHI CHATTERJEE",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 113637,
       "vote_share": 0.5091,
       "total_voters": 223193
@@ -691,7 +699,7 @@ window.WB_ELECTION_DATA = {
     "krishnaganj": {
       "constituency": "Krishnaganj",
       "winning_candidate": "ASHIS KUMAR BISWAS",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 117668,
       "vote_share": 0.5073,
       "total_voters": 231938
@@ -699,7 +707,7 @@ window.WB_ELECTION_DATA = {
     "ranaghat_uttar_purba": {
       "constituency": "Ranaghat Uttar Purba",
       "winning_candidate": "ASHIM BISWAS",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 116786,
       "vote_share": 0.5439,
       "total_voters": 214736
@@ -707,7 +715,7 @@ window.WB_ELECTION_DATA = {
     "ranaghat_dakshin": {
       "constituency": "Ranaghat Dakshin",
       "winning_candidate": "MUKUT MANI ADHIKARI",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 119260,
       "vote_share": 0.4934,
       "total_voters": 241687
@@ -715,7 +723,7 @@ window.WB_ELECTION_DATA = {
     "chakdaha": {
       "constituency": "Chakdaha",
       "winning_candidate": "Bankim Chandra Ghosh",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 99368,
       "vote_share": 0.4686,
       "total_voters": 212064
@@ -723,7 +731,7 @@ window.WB_ELECTION_DATA = {
     "kalyani": {
       "constituency": "Kalyani",
       "winning_candidate": "AMBIKA ROY",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 97026,
       "vote_share": 0.4404,
       "total_voters": 220338
@@ -731,7 +739,7 @@ window.WB_ELECTION_DATA = {
     "haringhata": {
       "constituency": "Haringhata",
       "winning_candidate": "NA",
-      "party": "CPIM",
+      "party": "NA",
       "votes": "NA",
       "vote_share": "NA",
       "total_voters": "NA"
@@ -739,7 +747,7 @@ window.WB_ELECTION_DATA = {
     "bagdah": {
       "constituency": "Bagdah",
       "winning_candidate": "Biswajit Das",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 108111,
       "vote_share": 0.4941,
       "total_voters": 218791
@@ -747,7 +755,7 @@ window.WB_ELECTION_DATA = {
     "bongaon_uttar": {
       "constituency": "Bongaon Uttar",
       "winning_candidate": "ASHOK KIRTANIA",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 97761,
       "vote_share": 0.4765,
       "total_voters": 205175
@@ -771,7 +779,7 @@ window.WB_ELECTION_DATA = {
     "swarupnagar": {
       "constituency": "Swarupnagar",
       "winning_candidate": "BINA MONDAL",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 99784,
       "vote_share": 0.4711,
       "total_voters": 211804
@@ -779,7 +787,7 @@ window.WB_ELECTION_DATA = {
     "baduria": {
       "constituency": "Baduria",
       "winning_candidate": "ABDUR RAHIM QUAZI",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 109701,
       "vote_share": 0.5153,
       "total_voters": 212883
@@ -787,7 +795,7 @@ window.WB_ELECTION_DATA = {
     "habra": {
       "constituency": "Habra",
       "winning_candidate": "JYOTI PRIYA MALLICK",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 90533,
       "vote_share": 0.4434,
       "total_voters": 204171
@@ -795,7 +803,7 @@ window.WB_ELECTION_DATA = {
     "ashoknagar": {
       "constituency": "Ashoknagar",
       "winning_candidate": "NARAYAN GOSWAMI",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 93587,
       "vote_share": 0.4318,
       "total_voters": 216724
@@ -803,7 +811,7 @@ window.WB_ELECTION_DATA = {
     "amdanga": {
       "constituency": "Amdanga",
       "winning_candidate": "RAFIQUR RAHAMAN",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 88935,
       "vote_share": 0.42,
       "total_voters": 211742
@@ -811,7 +819,7 @@ window.WB_ELECTION_DATA = {
     "bijpur": {
       "constituency": "Bijpur",
       "winning_candidate": "SUBODH ADHIKARY",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 66625,
       "vote_share": 0.479,
       "total_voters": 139096
@@ -819,7 +827,7 @@ window.WB_ELECTION_DATA = {
     "naihati": {
       "constituency": "Naihati",
       "winning_candidate": "PARTHA BHOWMICK",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 77753,
       "vote_share": 0.4969,
       "total_voters": 156468
@@ -835,7 +843,7 @@ window.WB_ELECTION_DATA = {
     "jagatdal": {
       "constituency": "Jagatdal",
       "winning_candidate": "SOMENATH SHYAM ICHINI",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 87030,
       "vote_share": 0.4801,
       "total_voters": 181287
@@ -843,7 +851,7 @@ window.WB_ELECTION_DATA = {
     "noapara": {
       "constituency": "Noapara",
       "winning_candidate": "MANJU BASU",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 94203,
       "vote_share": 0.489,
       "total_voters": 192634
@@ -851,7 +859,7 @@ window.WB_ELECTION_DATA = {
     "barrackpur": {
       "constituency": "Barrackpur",
       "winning_candidate": "RAJU CHAKRABORTY (RAJ)",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 68887,
       "vote_share": 0.4647,
       "total_voters": 148249
@@ -859,7 +867,7 @@ window.WB_ELECTION_DATA = {
     "khardaha": {
       "constituency": "Khardaha",
       "winning_candidate": "KAJAL SINHA",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 89807,
       "vote_share": 0.4904,
       "total_voters": 183147
@@ -867,7 +875,7 @@ window.WB_ELECTION_DATA = {
     "dum_dum_uttar": {
       "constituency": "Dum Dum Uttar",
       "winning_candidate": "CHANDRIMA BHATTACHARYA",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 95465,
       "vote_share": 0.4479,
       "total_voters": 213149
@@ -875,7 +883,7 @@ window.WB_ELECTION_DATA = {
     "panihati": {
       "constituency": "Panihati",
       "winning_candidate": "NIRMAL GHOSH",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 86495,
       "vote_share": 0.4961,
       "total_voters": 174356
@@ -883,7 +891,7 @@ window.WB_ELECTION_DATA = {
     "kamarhati": {
       "constituency": "Kamarhati",
       "winning_candidate": "MADAN MITRA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 73845,
       "vote_share": 0.5117,
       "total_voters": 144310
@@ -891,7 +899,7 @@ window.WB_ELECTION_DATA = {
     "baranagar": {
       "constituency": "Baranagar",
       "winning_candidate": "TAPAS ROY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 85615,
       "vote_share": 0.5342,
       "total_voters": 160259
@@ -899,7 +907,7 @@ window.WB_ELECTION_DATA = {
     "dum_dum": {
       "constituency": "Dum dum",
       "winning_candidate": "BRTYA BASU",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 87999,
       "vote_share": 0.4748,
       "total_voters": 185334
@@ -907,7 +915,7 @@ window.WB_ELECTION_DATA = {
     "rajarhat_new_town": {
       "constituency": "Rajarhat new town",
       "winning_candidate": "TAPASH CHATTERJEE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 127374,
       "vote_share": 0.5422,
       "total_voters": 234906
@@ -915,7 +923,7 @@ window.WB_ELECTION_DATA = {
     "bidhannagar": {
       "constituency": "Bidhannagar",
       "winning_candidate": "SUJIT BOSE S/O - LATE AJIT BOSE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 75912,
       "vote_share": 0.4685,
       "total_voters": 162035
@@ -923,7 +931,7 @@ window.WB_ELECTION_DATA = {
     "rajarhat_gopalpur": {
       "constituency": "Rajarhat gopalpur",
       "winning_candidate": "ADITI MUNSHI",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 87650,
       "vote_share": 0.4904,
       "total_voters": 178723
@@ -931,7 +939,7 @@ window.WB_ELECTION_DATA = {
     "madhyamgram": {
       "constituency": "Madhyamgram",
       "winning_candidate": "RATHIN GHOSH",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 112741,
       "vote_share": 0.4893,
       "total_voters": 230431
@@ -939,7 +947,7 @@ window.WB_ELECTION_DATA = {
     "barasat": {
       "constituency": "Barasat",
       "winning_candidate": "CHIRANJEET CHAKRABARTI",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 104431,
       "vote_share": 0.4627,
       "total_voters": 225707
@@ -947,7 +955,7 @@ window.WB_ELECTION_DATA = {
     "deganga": {
       "constituency": "Deganga",
       "winning_candidate": "RAHIMA MONDAL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 100105,
       "vote_share": 0.467,
       "total_voters": 214380
@@ -955,7 +963,7 @@ window.WB_ELECTION_DATA = {
     "haroa": {
       "constituency": "Haroa",
       "winning_candidate": "ISLAM SK NURUL (HAJI)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 130398,
       "vote_share": 0.5734,
       "total_voters": 227395
@@ -963,7 +971,7 @@ window.WB_ELECTION_DATA = {
     "minakhan": {
       "constituency": "Minakhan",
       "winning_candidate": "USHA RANI MONDAL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 109818,
       "vote_share": 0.5172,
       "total_voters": 212352
@@ -971,7 +979,7 @@ window.WB_ELECTION_DATA = {
     "sandeshkhali": {
       "constituency": "Sandeshkhali",
       "winning_candidate": "SUKUMAR MAHATA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 112450,
       "vote_share": 0.5464,
       "total_voters": 205787
@@ -979,7 +987,7 @@ window.WB_ELECTION_DATA = {
     "basirhat_dakshin": {
       "constituency": "Basirhat Dakshin",
       "winning_candidate": "DR. SAPTARSHI BANERJEE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 115873,
       "vote_share": 0.4915,
       "total_voters": 235737
@@ -987,7 +995,7 @@ window.WB_ELECTION_DATA = {
     "basirhat_uttar": {
       "constituency": "Basirhat Uttar",
       "winning_candidate": "RAFIKUL ISLAM MONDAL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 137216,
       "vote_share": 0.5755,
       "total_voters": 238426
@@ -995,7 +1003,7 @@ window.WB_ELECTION_DATA = {
     "hingalganj": {
       "constituency": "Hingalganj",
       "winning_candidate": "DEBES MANDAL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 104706,
       "vote_share": 0.5378,
       "total_voters": 194681
@@ -1003,7 +1011,7 @@ window.WB_ELECTION_DATA = {
     "gosaba": {
       "constituency": "Gosaba",
       "winning_candidate": "JAYANTA NASKAR",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 105723,
       "vote_share": 0.5399,
       "total_voters": 195808
@@ -1011,7 +1019,7 @@ window.WB_ELECTION_DATA = {
     "basanti_(s.c.)": {
       "constituency": "Basanti (S.C.)",
       "winning_candidate": "SHYAMAL MONDAL",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 111453,
       "vote_share": 0.521,
       "total_voters": 213910
@@ -1019,7 +1027,7 @@ window.WB_ELECTION_DATA = {
     "kultali_(s.c)": {
       "constituency": "Kultali (S.C)",
       "winning_candidate": "Ganesh Chandra Mondal",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 117238,
       "vote_share": 0.5157,
       "total_voters": 227351
@@ -1027,7 +1035,7 @@ window.WB_ELECTION_DATA = {
     "patharpratima": {
       "constituency": "Patharpratima",
       "winning_candidate": "SAMIR KUMAR JANA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 120181,
       "vote_share": 0.5185,
       "total_voters": 231786
@@ -1035,7 +1043,7 @@ window.WB_ELECTION_DATA = {
     "kakdwip": {
       "constituency": "Kakdwip",
       "winning_candidate": "MANTURAM PAKHIRA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 114493,
       "vote_share": 0.5214,
       "total_voters": 219597
@@ -1043,7 +1051,7 @@ window.WB_ELECTION_DATA = {
     "sagar": {
       "constituency": "Sagar",
       "winning_candidate": "BANKIM CHANDRA HAZRA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 129000,
       "vote_share": 0.5396,
       "total_voters": 239067
@@ -1051,7 +1059,7 @@ window.WB_ELECTION_DATA = {
     "kulpi": {
       "constituency": "Kulpi",
       "winning_candidate": "JOGARANJAN HALDER",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 96577,
       "vote_share": 0.5001,
       "total_voters": 193130
@@ -1059,7 +1067,7 @@ window.WB_ELECTION_DATA = {
     "raidighi": {
       "constituency": "Raidighi",
       "winning_candidate": "ALOKE JALDATA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 115707,
       "vote_share": 0.4847,
       "total_voters": 238720
@@ -1067,7 +1075,7 @@ window.WB_ELECTION_DATA = {
     "mandirbazar": {
       "constituency": "Mandirbazar",
       "winning_candidate": "JOYDEB HALDER",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 95834,
       "vote_share": 0.4804,
       "total_voters": 199490
@@ -1075,7 +1083,7 @@ window.WB_ELECTION_DATA = {
     "jaynagar": {
       "constituency": "Jaynagar",
       "winning_candidate": "BISWANATH DAS",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 104952,
       "vote_share": 0.5185,
       "total_voters": 202431
@@ -1083,7 +1091,7 @@ window.WB_ELECTION_DATA = {
     "baruipur_purba": {
       "constituency": "Baruipur Purba",
       "winning_candidate": "BIVAS SARDAR (VOBO)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 123243,
       "vote_share": 0.5475,
       "total_voters": 225114
@@ -1091,7 +1099,7 @@ window.WB_ELECTION_DATA = {
     "canning_paschim": {
       "constituency": "Canning paschim",
       "winning_candidate": "Paresh Ram Das",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 111059,
       "vote_share": 0.5086,
       "total_voters": 218354
@@ -1099,7 +1107,7 @@ window.WB_ELECTION_DATA = {
     "canning_purba": {
       "constituency": "Canning Purba",
       "winning_candidate": "SAOKAT MOLLA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 122301,
       "vote_share": 0.5254,
       "total_voters": 232766
@@ -1107,7 +1115,7 @@ window.WB_ELECTION_DATA = {
     "baruipur_paschim": {
       "constituency": "Baruipur paschim",
       "winning_candidate": "BIMAN BANERJEE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 121006,
       "vote_share": 0.5727,
       "total_voters": 211293
@@ -1115,7 +1123,7 @@ window.WB_ELECTION_DATA = {
     "magrahat_purba": {
       "constituency": "Magrahat Purba",
       "winning_candidate": "NAMITA SAHA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 110945,
       "vote_share": 0.5382,
       "total_voters": 206153
@@ -1123,7 +1131,7 @@ window.WB_ELECTION_DATA = {
     "magrahat_paschim": {
       "constituency": "Magrahat paschim",
       "winning_candidate": "GIAS UDDIN MOLLA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 97006,
       "vote_share": 0.4993,
       "total_voters": 194282
@@ -1131,7 +1139,7 @@ window.WB_ELECTION_DATA = {
     "diamond_harbour": {
       "constituency": "Diamond harbour",
       "winning_candidate": "PANNALAL HALDER",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 98478,
       "vote_share": 0.4369,
       "total_voters": 225397
@@ -1139,7 +1147,7 @@ window.WB_ELECTION_DATA = {
     "falta": {
       "constituency": "Falta",
       "winning_candidate": "SANKAR KUMAR NASKAR",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 117179,
       "vote_share": 0.5635,
       "total_voters": 207932
@@ -1147,23 +1155,23 @@ window.WB_ELECTION_DATA = {
     "satgachia": {
       "constituency": "Satgachia",
       "winning_candidate": "MOHAN CHANDRA NASKAR",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 118635,
       "vote_share": 0.5037,
       "total_voters": 235546
     },
-    "bishnupur": {
-      "constituency": "Bishnupur",
-      "winning_candidate": "TANMAY GHOSH (BUMBA)",
-      "party": "BJP",
-      "votes": 89689,
-      "vote_share": 0.4684,
-      "total_voters": 191469
+    "bishnupur(s24p)": {
+      "constituency": "Bishnupur(S24P)",
+      "winning_candidate": "DILIP MONDAL",
+      "party": "AITC",
+      "votes": 136509,
+      "vote_share": 0.5746,
+      "total_voters": 237570
     },
     "sonarpur_dakshin": {
       "constituency": "Sonarpur Dakshin",
       "winning_candidate": "ARUNDHUTI MAITRA (LOVELY)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 109222,
       "vote_share": 0.4692,
       "total_voters": 232807
@@ -1171,7 +1179,7 @@ window.WB_ELECTION_DATA = {
     "bhangore": {
       "constituency": "Bhangore",
       "winning_candidate": "MD. NAWSAD SIDDIQUE",
-      "party": "CPIM",
+      "party": "ISF",
       "votes": 109237,
       "vote_share": 0.451,
       "total_voters": 242185
@@ -1179,7 +1187,7 @@ window.WB_ELECTION_DATA = {
     "kasba": {
       "constituency": "Kasba",
       "winning_candidate": "AHMED JAVED KHAN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 121372,
       "vote_share": 0.5439,
       "total_voters": 223154
@@ -1187,7 +1195,7 @@ window.WB_ELECTION_DATA = {
     "jadavpur": {
       "constituency": "Jadavpur",
       "winning_candidate": "DEBABRATA MAJUMDAR (MALAY)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 98100,
       "vote_share": 0.4554,
       "total_voters": 215419
@@ -1195,7 +1203,7 @@ window.WB_ELECTION_DATA = {
     "sonarpur_uttar": {
       "constituency": "Sonarpur Uttar",
       "winning_candidate": "FIRDOUSI BEGUM",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 119957,
       "vote_share": 0.4988,
       "total_voters": 240495
@@ -1203,7 +1211,7 @@ window.WB_ELECTION_DATA = {
     "tollygunj": {
       "constituency": "Tollygunj",
       "winning_candidate": "AROOP BISWAS",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 101440,
       "vote_share": 0.514,
       "total_voters": 197365
@@ -1211,7 +1219,7 @@ window.WB_ELECTION_DATA = {
     "behala_purba": {
       "constituency": "BEHALA PURBA",
       "winning_candidate": "Ratna Chatterjee",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 110968,
       "vote_share": 0.5001,
       "total_voters": 221872
@@ -1219,7 +1227,7 @@ window.WB_ELECTION_DATA = {
     "behala_paschim": {
       "constituency": "Behala paschim",
       "winning_candidate": "PARTHA CHATTERJEE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 114778,
       "vote_share": 0.4951,
       "total_voters": 231816
@@ -1227,7 +1235,7 @@ window.WB_ELECTION_DATA = {
     "maheshtala": {
       "constituency": "Maheshtala",
       "winning_candidate": "DULAL CHANDRA DAS",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 124008,
       "vote_share": 0.5638,
       "total_voters": 219969
@@ -1235,7 +1243,7 @@ window.WB_ELECTION_DATA = {
     "budge_budge": {
       "constituency": "BUDGE BUDGE",
       "winning_candidate": "ASHOK KUMAR DEB",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 122357,
       "vote_share": 0.5641,
       "total_voters": 216892
@@ -1243,7 +1251,7 @@ window.WB_ELECTION_DATA = {
     "metiaburuz": {
       "constituency": "Metiaburuz",
       "winning_candidate": "ABDUL KHALEQUE MOLLA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 151066,
       "vote_share": 0.7685,
       "total_voters": 196582
@@ -1251,7 +1259,7 @@ window.WB_ELECTION_DATA = {
     "kolkata_port": {
       "constituency": "Kolkata port",
       "winning_candidate": "Firhad Hakim",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 105543,
       "vote_share": 0.6923,
       "total_voters": 152443
@@ -1259,7 +1267,7 @@ window.WB_ELECTION_DATA = {
     "bhabanipur": {
       "constituency": "Bhabanipur",
       "winning_candidate": "Sobhandeb Chattopadhyay",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 73505,
       "vote_share": 0.5771,
       "total_voters": 127376
@@ -1267,7 +1275,7 @@ window.WB_ELECTION_DATA = {
     "rashbehari": {
       "constituency": "Rashbehari",
       "winning_candidate": "DEBASISH KUMAR",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 65704,
       "vote_share": 0.5279,
       "total_voters": 124455
@@ -1275,7 +1283,7 @@ window.WB_ELECTION_DATA = {
     "ballygunge": {
       "constituency": "Ballygunge",
       "winning_candidate": "Subrata Mukherjee",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 106585,
       "vote_share": 0.706,
       "total_voters": 150962
@@ -1283,7 +1291,7 @@ window.WB_ELECTION_DATA = {
     "chowrangee": {
       "constituency": "Chowrangee",
       "winning_candidate": "BANDYOPADHYAY NAYNA",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 70101,
       "vote_share": 0.6287,
       "total_voters": 111493
@@ -1291,7 +1299,7 @@ window.WB_ELECTION_DATA = {
     "entally": {
       "constituency": "Entally",
       "winning_candidate": "Swarna Kamal Saha",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 101709,
       "vote_share": 0.6483,
       "total_voters": 156874
@@ -1299,7 +1307,7 @@ window.WB_ELECTION_DATA = {
     "beleghata": {
       "constituency": "Beleghata",
       "winning_candidate": "PARESH PAUL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 103182,
       "vote_share": 0.651,
       "total_voters": 158506
@@ -1307,7 +1315,7 @@ window.WB_ELECTION_DATA = {
     "jorasanko": {
       "constituency": "Jorasanko",
       "winning_candidate": "VIVEK GUPTA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 52123,
       "vote_share": 0.5267,
       "total_voters": 98955
@@ -1315,7 +1323,7 @@ window.WB_ELECTION_DATA = {
     "shyampukur": {
       "constituency": "Shyampukur",
       "winning_candidate": "Dr. SHASHI PANJA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 55785,
       "vote_share": 0.5418,
       "total_voters": 102970
@@ -1323,7 +1331,7 @@ window.WB_ELECTION_DATA = {
     "maniktala": {
       "constituency": "Maniktala",
       "winning_candidate": "Sadhan Pande",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 67577,
       "vote_share": 0.5082,
       "total_voters": 132967
@@ -1331,7 +1339,7 @@ window.WB_ELECTION_DATA = {
     "kashipur-belgachia": {
       "constituency": "Kashipur-Belgachia",
       "winning_candidate": "Atin Ghosh",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 76182,
       "vote_share": 0.5648,
       "total_voters": 134872
@@ -1339,7 +1347,7 @@ window.WB_ELECTION_DATA = {
     "bally": {
       "constituency": "Bally",
       "winning_candidate": "RANA CHATTERJEE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 53347,
       "vote_share": 0.4238,
       "total_voters": 125872
@@ -1347,7 +1355,7 @@ window.WB_ELECTION_DATA = {
     "howrah_uttar": {
       "constituency": "Howrah Uttar",
       "winning_candidate": "GAUTAM CHOWDHURI",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 71575,
       "vote_share": 0.4781,
       "total_voters": 149720
@@ -1355,7 +1363,7 @@ window.WB_ELECTION_DATA = {
     "howrah_madhya": {
       "constituency": "Howrah madhya",
       "winning_candidate": "Arup Roy",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 111554,
       "vote_share": 0.5716,
       "total_voters": 195144
@@ -1363,7 +1371,7 @@ window.WB_ELECTION_DATA = {
     "shibpur": {
       "constituency": "Shibpur",
       "winning_candidate": "Manoj Tiwary",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 92372,
       "vote_share": 0.5069,
       "total_voters": 182219
@@ -1371,7 +1379,7 @@ window.WB_ELECTION_DATA = {
     "howrah_dakshin": {
       "constituency": "Howrah Dakshin",
       "winning_candidate": "NANDITA CHOWDHURY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 116839,
       "vote_share": 0.5386,
       "total_voters": 216940
@@ -1379,7 +1387,7 @@ window.WB_ELECTION_DATA = {
     "sankrail": {
       "constituency": "Sankrail",
       "winning_candidate": "PRIYA PAUL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 111888,
       "vote_share": 0.5037,
       "total_voters": 222127
@@ -1387,7 +1395,7 @@ window.WB_ELECTION_DATA = {
     "panchla": {
       "constituency": "Panchla",
       "winning_candidate": "GULSAN MULLICK",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 104572,
       "vote_share": 0.4819,
       "total_voters": 217009
@@ -1395,7 +1403,7 @@ window.WB_ELECTION_DATA = {
     "uluberia_purba": {
       "constituency": "Uluberia Purba",
       "winning_candidate": "BIDESH RANJAN BOSE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 86526,
       "vote_share": 0.4483,
       "total_voters": 193021
@@ -1403,7 +1411,7 @@ window.WB_ELECTION_DATA = {
     "uluberia_uttar": {
       "constituency": "Uluberia Uttar",
       "winning_candidate": "Dr. Nirmal Maji",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 91501,
       "vote_share": 0.4925,
       "total_voters": 185780
@@ -1411,7 +1419,7 @@ window.WB_ELECTION_DATA = {
     "uluberia_dakshin": {
       "constituency": "Uluberia Dakshin",
       "winning_candidate": "PULAK ROY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 101880,
       "vote_share": 0.5037,
       "total_voters": 202266
@@ -1419,7 +1427,7 @@ window.WB_ELECTION_DATA = {
     "shyampur": {
       "constituency": "Shyampur",
       "winning_candidate": "KALIPADA MANDAL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 114804,
       "vote_share": 0.5174,
       "total_voters": 221889
@@ -1427,7 +1435,7 @@ window.WB_ELECTION_DATA = {
     "bagnan": {
       "constituency": "Bagnan",
       "winning_candidate": "Arunava Sen (Raja)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 106042,
       "vote_share": 0.5304,
       "total_voters": 199935
@@ -1435,7 +1443,7 @@ window.WB_ELECTION_DATA = {
     "amta": {
       "constituency": "Amta",
       "winning_candidate": "SUKANTA KUMAR PAUL",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 102445,
       "vote_share": 0.4906,
       "total_voters": 208810
@@ -1443,7 +1451,7 @@ window.WB_ELECTION_DATA = {
     "udaynarayanpur": {
       "constituency": "Udaynarayanpur",
       "winning_candidate": "SAMIR KUMAR PANJA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 101510,
       "vote_share": 0.5121,
       "total_voters": 198211
@@ -1451,7 +1459,7 @@ window.WB_ELECTION_DATA = {
     "jagatballavpur": {
       "constituency": "Jagatballavpur",
       "winning_candidate": "SITANATH GHOSH",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 116562,
       "vote_share": 0.4945,
       "total_voters": 235721
@@ -1459,7 +1467,7 @@ window.WB_ELECTION_DATA = {
     "domjur": {
       "constituency": "Domjur",
       "winning_candidate": "KALYAN GHOSH",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 130499,
       "vote_share": 0.52,
       "total_voters": 250978
@@ -1467,7 +1475,7 @@ window.WB_ELECTION_DATA = {
     "uttarpara": {
       "constituency": "Uttarpara",
       "winning_candidate": "KANCHAN MULLICK",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 93878,
       "vote_share": 0.4696,
       "total_voters": 199894
@@ -1475,7 +1483,7 @@ window.WB_ELECTION_DATA = {
     "sreerampur": {
       "constituency": "Sreerampur",
       "winning_candidate": "DR. SUDIPTO ROY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 93021,
       "vote_share": 0.4946,
       "total_voters": 188081
@@ -1483,7 +1491,7 @@ window.WB_ELECTION_DATA = {
     "champdani": {
       "constituency": "Champdani",
       "winning_candidate": "ARINDAM GUIN (BUBAI)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 100972,
       "vote_share": 0.502,
       "total_voters": 201131
@@ -1491,7 +1499,7 @@ window.WB_ELECTION_DATA = {
     "singur": {
       "constituency": "Singur",
       "winning_candidate": "BECHARAM MANNA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 101077,
       "vote_share": 0.4815,
       "total_voters": 209938
@@ -1499,7 +1507,7 @@ window.WB_ELECTION_DATA = {
     "chandannagore": {
       "constituency": "Chandannagore",
       "winning_candidate": "INDRANIL SEN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 86778,
       "vote_share": 0.4763,
       "total_voters": 182178
@@ -1507,7 +1515,7 @@ window.WB_ELECTION_DATA = {
     "chunchura": {
       "constituency": "Chunchura",
       "winning_candidate": "Asit Mazumder (Tapan)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 117104,
       "vote_share": 0.4597,
       "total_voters": 254737
@@ -1515,7 +1523,7 @@ window.WB_ELECTION_DATA = {
     "balagarh": {
       "constituency": "Balagarh",
       "winning_candidate": "MANORANJAN BAPARI",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 100364,
       "vote_share": 0.4563,
       "total_voters": 219957
@@ -1523,7 +1531,7 @@ window.WB_ELECTION_DATA = {
     "pandua": {
       "constituency": "Pandua",
       "winning_candidate": "Dr. Ratna De Nag",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 102874,
       "vote_share": 0.4599,
       "total_voters": 223664
@@ -1531,7 +1539,7 @@ window.WB_ELECTION_DATA = {
     "saptagram": {
       "constituency": "Saptagram",
       "winning_candidate": "TAPAN DASGUPTA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 93328,
       "vote_share": 0.4856,
       "total_voters": 192190
@@ -1539,7 +1547,7 @@ window.WB_ELECTION_DATA = {
     "chanditala": {
       "constituency": "Chanditala",
       "winning_candidate": "SWATI KHANDOKER",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 103118,
       "vote_share": 0.4979,
       "total_voters": 207106
@@ -1547,7 +1555,7 @@ window.WB_ELECTION_DATA = {
     "jangipara": {
       "constituency": "Jangipara",
       "winning_candidate": "SNEHASIS CHAKRABORTY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 101885,
       "vote_share": 0.4842,
       "total_voters": 210411
@@ -1555,7 +1563,7 @@ window.WB_ELECTION_DATA = {
     "haripal": {
       "constituency": "Haripal",
       "winning_candidate": "Dr. Karabi Manna",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 110215,
       "vote_share": 0.4992,
       "total_voters": 220774
@@ -1563,7 +1571,7 @@ window.WB_ELECTION_DATA = {
     "dhanekhali": {
       "constituency": "Dhanekhali",
       "winning_candidate": "ASIMA PATRA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 124776,
       "vote_share": 0.5336,
       "total_voters": 233838
@@ -1571,7 +1579,7 @@ window.WB_ELECTION_DATA = {
     "tarakeswar": {
       "constituency": "Tarakeswar",
       "winning_candidate": "RAMENDU SINHARAY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 96698,
       "vote_share": 0.4696,
       "total_voters": 205917
@@ -1579,7 +1587,7 @@ window.WB_ELECTION_DATA = {
     "pursurah": {
       "constituency": "Pursurah",
       "winning_candidate": "BIMAN GHOSH",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 119334,
       "vote_share": 0.535,
       "total_voters": 223074
@@ -1587,7 +1595,7 @@ window.WB_ELECTION_DATA = {
     "arambagh": {
       "constituency": "Arambagh",
       "winning_candidate": "MADHUSUDAN BAG",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 103108,
       "vote_share": 0.4688,
       "total_voters": 219960
@@ -1595,7 +1603,7 @@ window.WB_ELECTION_DATA = {
     "goghat": {
       "constituency": "Goghat",
       "winning_candidate": "BISWANATH KARAK",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 102227,
       "vote_share": 0.4656,
       "total_voters": 219545
@@ -1603,7 +1611,7 @@ window.WB_ELECTION_DATA = {
     "khanakul": {
       "constituency": "Khanakul",
       "winning_candidate": "SUSANTA GHOSH",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 107403,
       "vote_share": 0.4927,
       "total_voters": 217991
@@ -1611,7 +1619,7 @@ window.WB_ELECTION_DATA = {
     "tamluk": {
       "constituency": "Tamluk",
       "winning_candidate": "Saumen Kumar Mahapatra",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 108243,
       "vote_share": 0.4586,
       "total_voters": 236031
@@ -1619,7 +1627,7 @@ window.WB_ELECTION_DATA = {
     "panskura_purba": {
       "constituency": "Panskura Purba",
       "winning_candidate": "Biplab Roy Chowdhury",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 91213,
       "vote_share": 0.4597,
       "total_voters": 198400
@@ -1627,7 +1635,7 @@ window.WB_ELECTION_DATA = {
     "panskura_paschim": {
       "constituency": "Panskura paschim",
       "winning_candidate": "PHIROJA BIBI",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 111705,
       "vote_share": 0.4771,
       "total_voters": 234141
@@ -1635,7 +1643,7 @@ window.WB_ELECTION_DATA = {
     "moyna": {
       "constituency": "Moyna",
       "winning_candidate": "Ashoke Dinda",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 108109,
       "vote_share": 0.4817,
       "total_voters": 224434
@@ -1643,7 +1651,7 @@ window.WB_ELECTION_DATA = {
     "nandakumar": {
       "constituency": "Nandakumar",
       "winning_candidate": "SUKUMAR DE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 108181,
       "vote_share": 0.476,
       "total_voters": 227275
@@ -1651,7 +1659,7 @@ window.WB_ELECTION_DATA = {
     "mahisadal": {
       "constituency": "Mahisadal",
       "winning_candidate": "TILAK KUMAR CHAKRABORTY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 101986,
       "vote_share": 0.4649,
       "total_voters": 219355
@@ -1659,7 +1667,7 @@ window.WB_ELECTION_DATA = {
     "haldia": {
       "constituency": "Haldia",
       "winning_candidate": "Tapasi Mondal",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 104126,
       "vote_share": 0.4715,
       "total_voters": 220823
@@ -1667,7 +1675,7 @@ window.WB_ELECTION_DATA = {
     "nandigram": {
       "constituency": "Nandigram",
       "winning_candidate": "ADHIKARI SUVENDU",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 110764,
       "vote_share": 0.4849,
       "total_voters": 228405
@@ -1675,7 +1683,7 @@ window.WB_ELECTION_DATA = {
     "chandipur": {
       "constituency": "Chandipur",
       "winning_candidate": "Soham Chakraborty",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 109770,
       "vote_share": 0.4982,
       "total_voters": 220327
@@ -1683,7 +1691,7 @@ window.WB_ELECTION_DATA = {
     "patashpur": {
       "constituency": "Patashpur",
       "winning_candidate": "UTTAM BARIK",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 105299,
       "vote_share": 0.5042,
       "total_voters": 208827
@@ -1723,7 +1731,7 @@ window.WB_ELECTION_DATA = {
     "ramnagar": {
       "constituency": "Ramnagar",
       "winning_candidate": "AKHIL GIRI",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 112622,
       "vote_share": 0.5072,
       "total_voters": 222060
@@ -1731,7 +1739,7 @@ window.WB_ELECTION_DATA = {
     "egra": {
       "constituency": "Egra",
       "winning_candidate": "TARUN KUMAR MAITY",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 125763,
       "vote_share": 0.5222,
       "total_voters": 240817
@@ -1739,7 +1747,7 @@ window.WB_ELECTION_DATA = {
     "dantan": {
       "constituency": "Dantan",
       "winning_candidate": "BIKRAM CHANDRA PRADHAN",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 95209,
       "vote_share": 0.4813,
       "total_voters": 197798
@@ -1747,7 +1755,7 @@ window.WB_ELECTION_DATA = {
     "nayagram": {
       "constituency": "Nayagram",
       "winning_candidate": "DULAL MURMU",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 100903,
       "vote_share": 0.5246,
       "total_voters": 192354
@@ -1755,7 +1763,7 @@ window.WB_ELECTION_DATA = {
     "gopiballavpur": {
       "constituency": "Gopiballavpur",
       "winning_candidate": "Dr. Khagendra Nath Mahata",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 104115,
       "vote_share": 0.523,
       "total_voters": 199070
@@ -1763,7 +1771,7 @@ window.WB_ELECTION_DATA = {
     "jhargram": {
       "constituency": "Jhargram",
       "winning_candidate": "BIRBAHA HANSDA",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 109493,
       "vote_share": 0.5426,
       "total_voters": 201797
@@ -1771,7 +1779,7 @@ window.WB_ELECTION_DATA = {
     "keshiary": {
       "constituency": "Keshiary",
       "winning_candidate": "PARESH MURMU",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 106366,
       "vote_share": 0.5001,
       "total_voters": 212681
@@ -1779,7 +1787,7 @@ window.WB_ELECTION_DATA = {
     "kharagpur_sadar": {
       "constituency": "Kharagpur sadar",
       "winning_candidate": "HIRANMOY CHATTOPADHYAYA",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 79607,
       "vote_share": 0.4645,
       "total_voters": 171385
@@ -1787,7 +1795,7 @@ window.WB_ELECTION_DATA = {
     "narayangarh": {
       "constituency": "Narayangarh",
       "winning_candidate": "ATTA SURJA KANTA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 100894,
       "vote_share": 0.4633,
       "total_voters": 217750
@@ -1795,7 +1803,7 @@ window.WB_ELECTION_DATA = {
     "sabang": {
       "constituency": "SABANG",
       "winning_candidate": "MANAS RANJAN BHUNIA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 112098,
       "vote_share": 0.4746,
       "total_voters": 236201
@@ -1803,7 +1811,7 @@ window.WB_ELECTION_DATA = {
     "pingla": {
       "constituency": "Pingla",
       "winning_candidate": "AJIT MAITY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 112435,
       "vote_share": 0.4917,
       "total_voters": 228669
@@ -1811,7 +1819,7 @@ window.WB_ELECTION_DATA = {
     "kharagpur": {
       "constituency": "Kharagpur",
       "winning_candidate": "DINEN ROY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 109727,
       "vote_share": 0.5485,
       "total_voters": 200044
@@ -1819,7 +1827,7 @@ window.WB_ELECTION_DATA = {
     "debra": {
       "constituency": "Debra",
       "winning_candidate": "HUMAYUN KABIR",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 95850,
       "vote_share": 0.4679,
       "total_voters": 204866
@@ -1827,7 +1835,7 @@ window.WB_ELECTION_DATA = {
     "daspur": {
       "constituency": "Daspur",
       "winning_candidate": "MAMATA BHUNIA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 114753,
       "vote_share": 0.5158,
       "total_voters": 222464
@@ -1835,7 +1843,7 @@ window.WB_ELECTION_DATA = {
     "ghatal": {
       "constituency": "Ghatal",
       "winning_candidate": "SITAL KAPAT",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 105812,
       "vote_share": 0.4695,
       "total_voters": 225375
@@ -1843,7 +1851,7 @@ window.WB_ELECTION_DATA = {
     "chandrakona": {
       "constituency": "Chandrakona",
       "winning_candidate": "ARUP DHARA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 121846,
       "vote_share": 0.4887,
       "total_voters": 249315
@@ -1851,7 +1859,7 @@ window.WB_ELECTION_DATA = {
     "garbeta": {
       "constituency": "Garbeta",
       "winning_candidate": "Uttara Singha (Hazra)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 94928,
       "vote_share": 0.4571,
       "total_voters": 207681
@@ -1859,7 +1867,7 @@ window.WB_ELECTION_DATA = {
     "salboni": {
       "constituency": "Salboni",
       "winning_candidate": "Srikanta Mahata",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 126020,
       "vote_share": 0.5057,
       "total_voters": 249195
@@ -1867,7 +1875,7 @@ window.WB_ELECTION_DATA = {
     "keshpur": {
       "constituency": "Keshpur",
       "winning_candidate": "Seuli Saha",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 116992,
       "vote_share": 0.5081,
       "total_voters": 230232
@@ -1875,7 +1883,7 @@ window.WB_ELECTION_DATA = {
     "medinipur": {
       "constituency": "Medinipur",
       "winning_candidate": "June Maliah",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 121175,
       "vote_share": 0.5072,
       "total_voters": 238898
@@ -1883,7 +1891,7 @@ window.WB_ELECTION_DATA = {
     "binpur": {
       "constituency": "Binpur",
       "winning_candidate": "DEBNATH HANSDA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 100277,
       "vote_share": 0.5311,
       "total_voters": 188798
@@ -1891,7 +1899,7 @@ window.WB_ELECTION_DATA = {
     "bandwan": {
       "constituency": "Bandwan",
       "winning_candidate": "RAJIB LOCHAN SAREN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 113337,
       "vote_share": 0.4702,
       "total_voters": 241055
@@ -1899,7 +1907,7 @@ window.WB_ELECTION_DATA = {
     "balarampur": {
       "constituency": "Balarampur",
       "winning_candidate": "BANESWAR MAHATO",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 89521,
       "vote_share": 0.4522,
       "total_voters": 197965
@@ -1907,7 +1915,7 @@ window.WB_ELECTION_DATA = {
     "baghmundi": {
       "constituency": "Baghmundi",
       "winning_candidate": "Sushanta Mahato",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 75905,
       "vote_share": 0.3679,
       "total_voters": 206303
@@ -1915,7 +1923,7 @@ window.WB_ELECTION_DATA = {
     "joypur": {
       "constituency": "Joypur",
       "winning_candidate": "Nara Hari Mahato",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 74380,
       "vote_share": 0.3668,
       "total_voters": 202767
@@ -1923,7 +1931,7 @@ window.WB_ELECTION_DATA = {
     "purulia": {
       "constituency": "Purulia",
       "winning_candidate": "Sudip Kumar Mukherjee",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 89733,
       "vote_share": 0.4338,
       "total_voters": 206868
@@ -1931,7 +1939,7 @@ window.WB_ELECTION_DATA = {
     "manbazar": {
       "constituency": "Manbazar",
       "winning_candidate": "SANDHYARANI TUDU",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 103298,
       "vote_share": 0.4833,
       "total_voters": 213729
@@ -1939,7 +1947,7 @@ window.WB_ELECTION_DATA = {
     "kashipur": {
       "constituency": "Kashipur",
       "winning_candidate": "KAMALAKANTA HANSDA",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 92938,
       "vote_share": 0.4769,
       "total_voters": 194892
@@ -1947,7 +1955,7 @@ window.WB_ELECTION_DATA = {
     "para": {
       "constituency": "Para",
       "winning_candidate": "NADIAR CHAND BOURI",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 87347,
       "vote_share": 0.4502,
       "total_voters": 194021
@@ -1955,7 +1963,7 @@ window.WB_ELECTION_DATA = {
     "raghunathpur": {
       "constituency": "Raghunathpur",
       "winning_candidate": "Vivekananda Bauri",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 95770,
       "vote_share": 0.4461,
       "total_voters": 214690
@@ -1963,7 +1971,7 @@ window.WB_ELECTION_DATA = {
     "saltora": {
       "constituency": "Saltora",
       "winning_candidate": "BAURI CHANDANA",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 91648,
       "vote_share": 0.4528,
       "total_voters": 202413
@@ -1971,7 +1979,7 @@ window.WB_ELECTION_DATA = {
     "chhatna": {
       "constituency": "Chhatna",
       "winning_candidate": "SATYANARAYAN MUKHOPADHYAY",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 90233,
       "vote_share": 0.4584,
       "total_voters": 196836
@@ -1979,7 +1987,7 @@ window.WB_ELECTION_DATA = {
     "ranibandh": {
       "constituency": "Ranibandh",
       "winning_candidate": "Jyotsna Mandi",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 90928,
       "vote_share": 0.4306,
       "total_voters": 211170
@@ -1987,7 +1995,7 @@ window.WB_ELECTION_DATA = {
     "raipur": {
       "constituency": "Raipur",
       "winning_candidate": "MRITYUNJOY MURMU",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 101043,
       "vote_share": 0.5196,
       "total_voters": 194476
@@ -1995,7 +2003,7 @@ window.WB_ELECTION_DATA = {
     "taldangra": {
       "constituency": "Taldangra",
       "winning_candidate": "ARUP CHAKRABORTY",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 92026,
       "vote_share": 0.4529,
       "total_voters": 203186
@@ -2011,18 +2019,26 @@ window.WB_ELECTION_DATA = {
     "barjora": {
       "constituency": "Barjora",
       "winning_candidate": "ALOK MUKHERJEE",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 93290,
       "vote_share": 0.4251,
       "total_voters": 219452
     },
     "onda": {
       "constituency": "Onda",
-      "winning_candidate": "AMARNATH  SHAKHA",
+      "winning_candidate": "AMARNATH SHAKHA",
       "party": "BJP",
       "votes": 104940,
       "vote_share": 0.4648,
       "total_voters": 225759
+    },
+    "bishnupur": {
+      "constituency": "Bishnupur",
+      "winning_candidate": "TANMAY GHOSH (BUMBA)",
+      "party": "BJP",
+      "votes": 89689,
+      "vote_share": 0.4684,
+      "total_voters": 191469
     },
     "kotulpur": {
       "constituency": "Kotulpur",
@@ -2051,7 +2067,7 @@ window.WB_ELECTION_DATA = {
     "khandaghosh": {
       "constituency": "Khandaghosh",
       "winning_candidate": "NABIN CHANDRA BAG",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 104264,
       "vote_share": 0.4785,
       "total_voters": 217897
@@ -2059,7 +2075,7 @@ window.WB_ELECTION_DATA = {
     "bardhaman_dakshin": {
       "constituency": "Bardhaman Dakshin",
       "winning_candidate": "KHOKAN DAS",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 91015,
       "vote_share": 0.4432,
       "total_voters": 205345
@@ -2067,7 +2083,7 @@ window.WB_ELECTION_DATA = {
     "raina": {
       "constituency": "Raina",
       "winning_candidate": "Shampa Dhara",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 108752,
       "vote_share": 0.4746,
       "total_voters": 229166
@@ -2075,7 +2091,7 @@ window.WB_ELECTION_DATA = {
     "jamalpur": {
       "constituency": "Jamalpur",
       "winning_candidate": "ALOK KUMAR MAJHI",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 96999,
       "vote_share": 0.4693,
       "total_voters": 206690
@@ -2083,7 +2099,7 @@ window.WB_ELECTION_DATA = {
     "monteswar": {
       "constituency": "Monteswar",
       "winning_candidate": "CHOWDHURY SIDDIQULLAH",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 105460,
       "vote_share": 0.5045,
       "total_voters": 209036
@@ -2091,7 +2107,7 @@ window.WB_ELECTION_DATA = {
     "kalna": {
       "constituency": "Kalna",
       "winning_candidate": "DEBOPRASAD BAG (POLTU)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 96073,
       "vote_share": 0.4598,
       "total_voters": 208951
@@ -2099,7 +2115,7 @@ window.WB_ELECTION_DATA = {
     "memari": {
       "constituency": "Memari",
       "winning_candidate": "MADHUSUDAN BHATTACHARYA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 104851,
       "vote_share": 0.4792,
       "total_voters": 218802
@@ -2107,7 +2123,7 @@ window.WB_ELECTION_DATA = {
     "bardhaman_uttar": {
       "constituency": "Bardhaman Uttar",
       "winning_candidate": "NISITH KUMAR MALIK",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 111211,
       "vote_share": 0.4597,
       "total_voters": 241925
@@ -2115,7 +2131,7 @@ window.WB_ELECTION_DATA = {
     "bhatar": {
       "constituency": "Bhatar",
       "winning_candidate": "ADHIKARI MANGOBINDA",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 108028,
       "vote_share": 0.5044,
       "total_voters": 214168
@@ -2123,7 +2139,7 @@ window.WB_ELECTION_DATA = {
     "purbasthali_dakshin": {
       "constituency": "Purbasthali Dakshin",
       "winning_candidate": "SWAPAN DEBNATH",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 105698,
       "vote_share": 0.4908,
       "total_voters": 215353
@@ -2131,7 +2147,7 @@ window.WB_ELECTION_DATA = {
     "purbasthali_uttar": {
       "constituency": "Purbasthali Uttar",
       "winning_candidate": "TAPAN CHATTERJEE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 92421,
       "vote_share": 0.4352,
       "total_voters": 212343
@@ -2139,7 +2155,7 @@ window.WB_ELECTION_DATA = {
     "katwa": {
       "constituency": "Katwa",
       "winning_candidate": "Rabindranath Chatterjee",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 107894,
       "vote_share": 0.4807,
       "total_voters": 224459
@@ -2147,7 +2163,7 @@ window.WB_ELECTION_DATA = {
     "ketugram": {
       "constituency": "Ketugram",
       "winning_candidate": "Sekh Sahonawez",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 100226,
       "vote_share": 0.4655,
       "total_voters": 215317
@@ -2155,7 +2171,7 @@ window.WB_ELECTION_DATA = {
     "mangalkot": {
       "constituency": "Mangalkot",
       "winning_candidate": "Apurba Chowdhury (Achal)",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 107596,
       "vote_share": 0.4951,
       "total_voters": 217329
@@ -2163,7 +2179,7 @@ window.WB_ELECTION_DATA = {
     "ausgram": {
       "constituency": "Ausgram",
       "winning_candidate": "ABHEDANANDA THANDER",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 100392,
       "vote_share": 0.4625,
       "total_voters": 217080
@@ -2171,7 +2187,7 @@ window.WB_ELECTION_DATA = {
     "galsi": {
       "constituency": "Galsi",
       "winning_candidate": "NEPAL GHORUI",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 109504,
       "vote_share": 0.4921,
       "total_voters": 222538
@@ -2179,7 +2195,7 @@ window.WB_ELECTION_DATA = {
     "pandabeswar": {
       "constituency": "Pandabeswar",
       "winning_candidate": "NARENDRANATH CHAKRABORTY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 73922,
       "vote_share": 0.4499,
       "total_voters": 164291
@@ -2187,7 +2203,7 @@ window.WB_ELECTION_DATA = {
     "durgapur_purba": {
       "constituency": "Durgapur Purba",
       "winning_candidate": "PRADIP MAZUMDAR",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 79303,
       "vote_share": 0.4116,
       "total_voters": 192674
@@ -2195,7 +2211,7 @@ window.WB_ELECTION_DATA = {
     "durgapur_paschim": {
       "constituency": "Durgapur paschim",
       "winning_candidate": "LAKSHMAN CHANDRA GHORUI",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 91186,
       "vote_share": 0.4631,
       "total_voters": 196902
@@ -2203,7 +2219,7 @@ window.WB_ELECTION_DATA = {
     "raniganj": {
       "constituency": "Raniganj",
       "winning_candidate": "TAPAS BANERJEE",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 78164,
       "vote_share": 0.429,
       "total_voters": 182211
@@ -2211,7 +2227,7 @@ window.WB_ELECTION_DATA = {
     "jamuria": {
       "constituency": "Jamuria",
       "winning_candidate": "HARERAM SINGH",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 71002,
       "vote_share": 0.4259,
       "total_voters": 166703
@@ -2219,7 +2235,7 @@ window.WB_ELECTION_DATA = {
     "asansol_dakshin": {
       "constituency": "Asansol Dakshin",
       "winning_candidate": "AGNIMITRA PAUL",
-      "party": "CPIM",
+      "party": "BJP",
       "votes": 87881,
       "vote_share": 0.4513,
       "total_voters": 194737
@@ -2227,15 +2243,15 @@ window.WB_ELECTION_DATA = {
     "asansol_uttar": {
       "constituency": "Asansol Uttar",
       "winning_candidate": "Ghatak Moloy",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 100931,
       "vote_share": 0.5232,
       "total_voters": 192907
     },
     "kulti": {
       "constituency": "Kulti",
-      "winning_candidate": "AJAY  KUMAR PODDAR",
-      "party": "CPIM",
+      "winning_candidate": "AJAY KUMAR PODDAR",
+      "party": "BJP",
       "votes": 81112,
       "vote_share": 0.4641,
       "total_voters": 174767
@@ -2243,7 +2259,7 @@ window.WB_ELECTION_DATA = {
     "barbani": {
       "constituency": "Barbani",
       "winning_candidate": "BIDHAN UPADHYAY",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 88430,
       "vote_share": 0.5226,
       "total_voters": 169207
@@ -2259,7 +2275,7 @@ window.WB_ELECTION_DATA = {
     "suri": {
       "constituency": "Suri",
       "winning_candidate": "BIKASH ROYCHOUDHURY",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 105871,
       "vote_share": 0.4843,
       "total_voters": 218590
@@ -2267,7 +2283,7 @@ window.WB_ELECTION_DATA = {
     "bolpur": {
       "constituency": "Bolpur",
       "winning_candidate": "SINHA CHANDRANATH",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 116443,
       "vote_share": 0.5057,
       "total_voters": 230260
@@ -2275,7 +2291,7 @@ window.WB_ELECTION_DATA = {
     "nanoor": {
       "constituency": "Nanoor",
       "winning_candidate": "BIDHAN CHANDRA MAJHI",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 112116,
       "vote_share": 0.4764,
       "total_voters": 235328
@@ -2283,7 +2299,7 @@ window.WB_ELECTION_DATA = {
     "labpur": {
       "constituency": "Labpur",
       "winning_candidate": "ABHIJIT SINHA (RANA)",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 108423,
       "vote_share": 0.5114,
       "total_voters": 212027
@@ -2291,7 +2307,7 @@ window.WB_ELECTION_DATA = {
     "sainthia": {
       "constituency": "Sainthia",
       "winning_candidate": "NILABATI SAHA",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 110572,
       "vote_share": 0.4984,
       "total_voters": 221866
@@ -2299,7 +2315,7 @@ window.WB_ELECTION_DATA = {
     "mayureswar": {
       "constituency": "Mayureswar",
       "winning_candidate": "ABHIJIT ROY",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 100425,
       "vote_share": 0.5036,
       "total_voters": 199425
@@ -2307,7 +2323,7 @@ window.WB_ELECTION_DATA = {
     "rampurhat": {
       "constituency": "Rampurhat",
       "winning_candidate": "ASISH BANERJEE",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 103276,
       "vote_share": 0.4752,
       "total_voters": 217323
@@ -2315,7 +2331,7 @@ window.WB_ELECTION_DATA = {
     "hansan": {
       "constituency": "Hansan",
       "winning_candidate": "Dr. ASOK KUMAR CHATTOPADHYAY",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 108289,
       "vote_share": 0.5142,
       "total_voters": 210606
@@ -2323,7 +2339,7 @@ window.WB_ELECTION_DATA = {
     "nalhati": {
       "constituency": "Nalhati",
       "winning_candidate": "RAJENDRA PRASAD SINGH (RAJU SINGH)",
-      "party": "BJP",
+      "party": "AITC",
       "votes": 117438,
       "vote_share": 0.5654,
       "total_voters": 207696
@@ -2331,7 +2347,7 @@ window.WB_ELECTION_DATA = {
     "murarai": {
       "constituency": "Murarai",
       "winning_candidate": "DR MOSARRAF HOSSAIN",
-      "party": "CPIM",
+      "party": "AITC",
       "votes": 146496,
       "vote_share": 0.6723,
       "total_voters": 217917
@@ -2340,10 +2356,10 @@ window.WB_ELECTION_DATA = {
   "sheet_1": {
     "mekliganj": {
       "constituency": "Mekliganj",
-      "aitc": "Subhradip Majumder",
-      "bjp": "Sourav Das",
-      "cpim": "Shrey Banerjee",
-      "inc": "Subham Ganguly"
+      "aitc": 0,
+      "bjp": 0,
+      "cpim": 0,
+      "inc": 0
     },
     "mathabhanga": {
       "constituency": "Mathabhanga",
@@ -2865,6 +2881,13 @@ window.WB_ELECTION_DATA = {
     },
     "jalangi": {
       "constituency": "Jalangi",
+      "aitc": 0,
+      "bjp": 0,
+      "cpim": 0,
+      "inc": 0
+    },
+    "karimpur": {
+      "constituency": "Karimpur",
       "aitc": 0,
       "bjp": 0,
       "cpim": 0,
@@ -7887,6 +7910,68 @@ window.WB_ELECTION_DATA = {
       "cpim-vote": 0,
       "inc-vote": 0,
       "total": 0
+    }
+  },
+  "sheet_3": {
+    "1": {
+      "slno": 1,
+      "candicate_name": "Mamata Banerjee",
+      "candidate_bio": "Candidate bio 1 nice Chife minister",
+      "party": "AITC",
+      "constituency": "Bhabawanipur",
+      "image_url": "https://res.cloudinary.com/dm5vwwcvl/image/upload/v1773836491/651929504_1480206913475030_346896703719646879_n_ixblo6.jpg",
+      "video_url": 0,
+      "video_title": 0
+    },
+    "2": {
+      "slno": 2,
+      "candicate_name": "Suvendu Adhikary",
+      "candidate_bio": "Candidate bio 2 nice  Leader of opposition",
+      "party": "BJP",
+      "constituency": "Nandigram",
+      "image_url": "https://res.cloudinary.com/dm5vwwcvl/image/upload/v1773836608/images_ugwabn.webp",
+      "video_url": 0,
+      "video_title": 0
+    },
+    "3": {
+      "slno": 3,
+      "candicate_name": "Bikash Ranjan Bhattacharya",
+      "candidate_bio": "Candidate bio 3 nice advocate",
+      "party": "CPIM",
+      "constituency": "Jadavpur",
+      "image_url": "https://res.cloudinary.com/dm5vwwcvl/image/upload/v1773836728/bikash_gxt8gf.webp",
+      "video_url": "https://youtu.be/Oj75ZLa5M9g?si=pmpnqwBjGAn0WyQE",
+      "video_title": "My Video title"
+    }
+  },
+  "sheet_4": {
+    "aitc": {
+      "party": "AITC",
+      "color": "#00a651"
+    },
+    "bjp": {
+      "party": "BJP",
+      "color": "#ff9933"
+    },
+    "cpi": {
+      "party": "CPI",
+      "color": "#e53935"
+    },
+    "cpim": {
+      "party": "CPIM",
+      "color": "#e53935"
+    },
+    "inc": {
+      "party": "INC",
+      "color": "#1976d2"
+    },
+    "nota": {
+      "party": "NOTA",
+      "color": "#F4F4F4"
+    },
+    "sfi": {
+      "party": "SFI",
+      "color": "#3a3a3a"
     }
   }
 };

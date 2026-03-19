@@ -1,94 +1,112 @@
 import React, { useRef, useState, useEffect } from "react";
 import { FaRegCaretSquareRight, FaRegCaretSquareLeft } from "react-icons/fa";
 import VideoCard from "./VideoCard";
-
-const videos = [
-  {
-    logo: "https://tse1.mm.bing.net/th/id/OIP.3dg0qy8anN5uExdgKDO4JgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
-    page: "Narendra Modi",
-    partyname: "ভারতীয় জনতা পার্টি (Bharatiya Janata Party)",
-    bidhabsova: "Kolkata",
-    thumbnail: "https://img.youtube.com/vi/lFeYU31TnQ8/hqdefault.jpg",
-    videoUrl: "https://youtu.be/lFeYU31TnQ8",
-    title: "কেন্দ্রীয় প্রকল্প নিয়ে বিজেপির সভা, উপস্থিত বহু নেতা",
-    totalVotes: "150000"
-  },
-  {
-    logo: "https://tse1.mm.bing.net/th/id/OIP.3dg0qy8anN5uExdgKDO4JgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
-    page: "Narendra Modi",
-    partyname: "ভারতীয় জনতা পার্টি (Bharatiya Janata Party)",
-    bidhabsova: "Kolkata",
-    thumbnail: "https://img.youtube.com/vi/pkKn8q5AvsY?si=70leZFvLCpMhnm3B/hqdefault.jpg",
-    videoUrl: "https://youtu.be/pkKn8q5AvsY?si=70leZFvLCpMhnm3B",
-    title: "কেন্দ্রীয় প্রকল্প নিয়ে বিজেপির সভা, উপস্থিত বহু নেতা",
-    totalVotes: "150000"
-  },
-  {
-    logo: "https://tse1.mm.bing.net/th/id/OIP.3dg0qy8anN5uExdgKDO4JgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
-    page: "Narendra Modi",
-    partyname: "ভারতীয় জনতা পার্টি (Bharatiya Janata Party)",
-    bidhabsova: "Kolkata",
-    thumbnail: "https://img.youtube.com/vi/0-FUhQKe-eU?si=teXONtgmdjnnUYYP/hqdefault.jpg",
-    videoUrl: "https://youtu.be/0-FUhQKe-eU?si=teXONtgmdjnnUYYP",
-    title: "কেন্দ্রীয় প্রকল্প নিয়ে বিজেপির সভা, উপস্থিত বহু নেতা",
-    totalVotes: "150000"
-  },
-  {
-    logo: "https://tse1.mm.bing.net/th/id/OIP.3dg0qy8anN5uExdgKDO4JgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
-    page: "Narendra Modi",
-    partyname: "ভারতীয় জনতা পার্টি (Bharatiya Janata Party)",
-    bidhabsova: "Kolkata",
-    thumbnail: "https://img.youtube.com/vi/lFeYU31TnQ8/hqdefault.jpg",
-    videoUrl: "https://youtu.be/lFeYU31TnQ8",
-    title: "কেন্দ্রীয় প্রকল্প নিয়ে বিজেপির সভা, উপস্থিত বহু নেতা",
-    totalVotes: "150000"
-  }
-];
+import { getPartyLogo } from "../utils/getPartyLogo";
 
 const VideoCardsSection = () => {
-
   const scrollRef = useRef(null);
 
+  const [cards, setCards] = useState([]);
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(true);
 
+  /* ================= FETCH DATA ================= */
+  useEffect(() => {
+    const data = window.WB_ELECTION_DATA?.sheet_3;
+
+    if (!data) return;
+
+    const formatted = Object.values(data)
+      .filter(item => item.image_url !== 0 || item.video_url !== 0)
+      .map(item => {
+        const isVideo = item.video_url && item.video_url !== 0;
+
+        return {
+          type: isVideo ? "video" : "image",
+          name: item.candicate_name,
+          party: item.party,
+          constituency: item.constituency,
+
+          // ✅ PARTY LOGO ADDED HERE
+          logo: getPartyLogo(item.party),
+
+          thumbnail: isVideo
+            ? `https://img.youtube.com/vi/${extractYouTubeId(item.video_url)}/hqdefault.jpg`
+            : item.image_url,
+
+          videoUrl: isVideo ? item.video_url : null,
+          title: isVideo ? item.video_title : item.candicate_name,
+        };
+      });
+
+    setCards(formatted);
+  }, []);
+
+  /* ================= YOUTUBE ID EXTRACT ================= */
+  const extractYouTubeId = (url) => {
+    try {
+      const regExp =
+        /(?:youtube\.com\/(?:.*v=|.*\/)|youtu\.be\/)([^"&?\/\s]{11})/;
+      const match = url.match(regExp);
+      return match ? match[1] : "";
+    } catch {
+      return "";
+    }
+  };
+
+  /* ================= SCROLL LOGIC ================= */
   const checkScroll = () => {
     const el = scrollRef.current;
+    if (!el) return;
 
-    const scrollLeft = el.scrollLeft;
-    const scrollWidth = el.scrollWidth;
-    const clientWidth = el.clientWidth;
-
-    setShowLeft(scrollLeft > 5);
-    setShowRight(scrollLeft + clientWidth < scrollWidth - 5);
+    setShowLeft(el.scrollLeft > 5);
+    setShowRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 5);
   };
 
   useEffect(() => {
     checkScroll();
-  }, []);
+  }, [cards]);
 
   const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -350, behavior: "smooth" });
+    const container = scrollRef.current;
+    const card = container.querySelector(".card-item");
+    if (!card) return;
+
+    const cardWidth = card.offsetWidth + 16;
+
+    container.scrollBy({
+      left: -cardWidth,
+      behavior: "smooth",
+    });
   };
 
   const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 350, behavior: "smooth" });
+    const container = scrollRef.current;
+    const card = container.querySelector(".card-item");
+    if (!card) return;
+
+    const cardWidth = card.offsetWidth + 16;
+
+    container.scrollBy({
+      left: cardWidth,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <div className="relative px-4 py-4">
+    <div className="relative w-full px-2 md:px-4 py-4">
 
-      <h2 className="text-lg font-bold mb-3 text-center">
-        Super Stars
-      </h2>
+      <h1 className="text-3xl font-bold mb-3 text-center font-serif">
+        Key Candidates
+      </h1>
 
       {/* LEFT BUTTON */}
       {showLeft && (
         <button
           onClick={scrollLeft}
-          className=" -ml-8 hidden md:hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-30 px-3 py-2 rounded-r-md"
+          className="absolute left-0 md:left-1 lg:-left-6 top-1/2 -translate-y-1/2 z-30 p-2 bg-white/80 backdrop-blur rounded-full shadow-md"
         >
-          <FaRegCaretSquareLeft size={30} />
+          <FaRegCaretSquareLeft className="text-xl md:text-2xl lg:text-3xl" />
         </button>
       )}
 
@@ -96,10 +114,15 @@ const VideoCardsSection = () => {
       <div
         ref={scrollRef}
         onScroll={checkScroll}
-        className="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide pb-2"
+        className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide pb-2 px-1 md:px-4"
       >
-        {videos.map((video, index) => (
-          <VideoCard key={index} video={video} />
+        {cards.map((item, index) => (
+          <div
+            key={index}
+            className="card-item snap-start"
+          >
+            <VideoCard video={item} />
+          </div>
         ))}
       </div>
 
@@ -107,9 +130,9 @@ const VideoCardsSection = () => {
       {showRight && (
         <button
           onClick={scrollRight}
-          className="-mr-8 hidden md:hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 z-30 px-3 py-2 rounded-l-md"
+          className="absolute right-0 md:right-1 lg:-right-6 top-1/2 -translate-y-1/2 z-30 p-2 bg-white/80 backdrop-blur rounded-full shadow-md"
         >
-          <FaRegCaretSquareRight size={30} />
+          <FaRegCaretSquareRight className="text-xl md:text-2xl lg:text-3xl" />
         </button>
       )}
 
