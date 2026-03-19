@@ -391,7 +391,7 @@ export default function ResultPieBarSection() {
         <div className="grid grid-cols-3 text-sm font-semibold text-gray-600 border-b pb-2">
           <div>Party</div>
           <div className="text-center">Seats</div>
-          <div className="text-right">Seats %</div>
+          <div className="text-right">Vote %</div>
         </div>
 
         <div className="mt-2 space-y-2">
