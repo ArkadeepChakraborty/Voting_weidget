@@ -50,7 +50,7 @@ export default function HomePage() {
 
           {/* <CandidateCarousel /> */}
 
-          <TwoCandidateSection />
+          {/* <TwoCandidateSection /> */}
 
           {/* <WestBengalNews /> */}
 

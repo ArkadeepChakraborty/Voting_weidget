@@ -280,7 +280,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import NewWbAssembly from '../assets/new_wb_assembly_1.svg?react';
+import NewWbAssembly from '../assets/wb_assembly_map.svg?react';
 import { reHashdata } from '../../utils/reHashConsticuencyData';
 import { getPartyLogo } from '../utils/getPartyLogo';
 
@@ -290,19 +290,23 @@ function Tab1() {
   const [constitutionData, setConstitutionData] = useState(null);
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [selectedSeat, setSelectedSeat] = useState(null);
+  const [carouselIndexo, setCarouselIndexo] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  const partyColor = {
+    AITC: "#00a651",
+    BJP: "#ff9933",
+    CPI: "#e53935",
+    CPIM: "#e53935",
+    INC: "#1976d2",
+    BGMP: "#ffff00",
+    ISF: "#e53935"
+  };
 
   useEffect(() => {
     const applyColors = () => {
       const data = window.WB_ELECTION_DATA?.sheet_0;
       if (!data) return;
-
-      const partyColor = {
-        AITC: "#00a651",
-        BJP: "#ff9933",
-        CPI: "#e53935",
-        CPIM: "#e53935",
-        INC: "#1976d2"
-      };
 
       Object.entries(data).forEach(([seat, r]) => {
         const el = document.querySelector(`[sub_link="${r.constituency}"]`);
@@ -432,11 +436,45 @@ function Tab1() {
     document.body.removeChild(link);
   };
 
+  useEffect(() => {
+    if (isPaused || candidateList.length === 0) return;
+
+    const interval = setInterval(() => {
+      setCarouselIndexo((prev) => (prev + 1) % candidateList.length);
+    }, 3000); // change timing if needed
+
+    return () => clearInterval(interval);
+  }, [isPaused, candidateList.length]);
+
   return (
     <div className="w-[95%] md:w-[90%] lg:w-[75%] lg:max-w-4xl xl:max-w-5xl mx-auto space-y-4">
 
       {/* MAP CARD ONLY */}
-      <div className="border bg-gray-50 rounded-xl overflow-hidden">
+      <div className="border border-gray-400 bg-gray-50 rounded-xl overflow-hidden relative">
+
+        {/* 🔥 LEGEND */}
+        <div className="absolute top-3 left-3  backdrop-blur-sm rounded-lg px-3 py-2 text-xs font-serif z-10">
+
+          <p className="font-bold text-gray-700 mb-2">Party</p>
+
+          <div className="space-y-1">
+            {Object.entries(partyColor).map(([party, color]) => (
+              <div key={party} className="flex items-center gap-2">
+
+                <span
+                  className="w-3 h-3 rounded-sm"
+                  style={{ backgroundColor: color }}
+                ></span>
+
+                <span className="text-gray-700">{party}</span>
+
+              </div>
+            ))}
+          </div>
+
+        </div>
+
+        {/* MAP */}
         <div className="w-full h-87.5 md:h-112.5">
 
           <TransformWrapper
@@ -461,48 +499,85 @@ function Tab1() {
 
       {/* 2026 CANDIDATES CARD */}
       {constitutionData && candidateList.length > 0 && (
-        <div className="bg-white border rounded-xl shadow p-4">
+        <div
+          className="bg-white border border-gray-200 rounded-xl shadow-lg p-5 font-serif"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
 
-          <h4 className="font-bold text-blue-900 mb-3 font-serif">
+          {/* Title */}
+          <h4 className="font-bold text-blue-900 mb-4 text-center text-lg tracking-wide">
             2026 Candidates
           </h4>
 
           <div className="flex items-center justify-between">
 
+            {/* LEFT BUTTON */}
             <button
               onClick={() =>
-                setCarouselIndex(
-                  (carouselIndex - 1 + candidateList.length) %
+                setCarouselIndexo(
+                  (carouselIndexo - 1 + candidateList.length) %
                   candidateList.length
                 )
               }
-              className="px-3 py-1 bg-gray-200 rounded"
+              className="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-full shadow transition"
             >
               ‹
             </button>
 
-            <div className="text-center flex-1 font-serif">
-              <div className="text-sm text-gray-500">
-                {candidateList[carouselIndex].party}
+            {/* CANDIDATE CARD */}
+            <div className="flex-1 flex justify-center">
+
+              <div className="rounded-xl px-6 py-4 text-center w-55 transition">
+
+                {/* Party Logo */}
+                <img
+                  src={getPartyLogo(candidateList[carouselIndexo].party)}
+                  alt="party"
+                  className="w-11 h-11 mx-auto rounded-full border-4 border-white shadow-md mb-3"
+                />
+
+                {/* Candidate Name */}
+                <div className="font-semibold text-lg text-gray-800">
+                  {candidateList[carouselIndexo].candidate}
+                </div>
+
+                {/* Party */}
+                <div className="text-sm text-gray-500 mt-1">
+                  {candidateList[carouselIndexo].party}
+                </div>
+
               </div>
 
-              <div className="font-semibold text-lg">
-                {candidateList[carouselIndex].candidate}
-              </div>
             </div>
 
+            {/* RIGHT BUTTON */}
             <button
               onClick={() =>
-                setCarouselIndex(
-                  (carouselIndex + 1) % candidateList.length
+                setCarouselIndexo(
+                  (carouselIndexo + 1) % candidateList.length
                 )
               }
-              className="px-3 py-1 bg-gray-200 rounded"
+              className="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-full shadow transition"
             >
               ›
             </button>
 
           </div>
+
+          {/* Indicator Dots */}
+          <div className="flex justify-center mt-4 gap-2">
+            {candidateList.map((_, index) => (
+              <div
+                key={index}
+                className={`w-2.5 h-2.5 rounded-full transition ${index === carouselIndexo
+                  ? "bg-blue-600 scale-110"
+                  : "bg-gray-300"
+                  }`}
+              ></div>
+            ))}
+          </div>
+
         </div>
       )}
 
