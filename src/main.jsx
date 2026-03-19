@@ -15,13 +15,13 @@ import "./index.css";
 import App from "./App.jsx";
 import "./i18n";
 
-/* 🔥 SHADOW DOM SETUP */
+/* SHADOW DOM SETUP */
 const host = document.getElementById("root");
 
 // create shadow root
 const shadowRoot = host.attachShadow({ mode: "open" });
 
-// ✅ expose globally
+// expose globally
 window.__SHADOW_ROOT__ = shadowRoot;
 
 // create mount point inside shadow
