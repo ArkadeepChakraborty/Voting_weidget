@@ -11,8 +11,17 @@
 } */
 
 
-svg path {
+.wb-map path {
+  fill: #e6e6e6;
+  stroke: #ffffff;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
   transition: fill 0.6s ease, stroke 0.3s ease, stroke-width 0.3s ease;
+}
+
+.wb-map path:hover {
+  opacity: 0.85;
+  cursor: pointer;
 }
 
 svg path:hover {

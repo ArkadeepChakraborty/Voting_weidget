@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import NewWbAssembly from '../assets/new_wb_assembly_1.svg?react';
+import NewWbAssembly from '../assets/wb_assembly_map.svg?react';
 import { reHashdata } from '../../utils/reHashConsticuencyData';
 
 
@@ -9,6 +9,8 @@ function Tab1() {
   const [constitutionData, setConstitutionData] = useState(null);
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [selectedSeat,setSelectedSeat] = useState(null)
+ 
+ 
   useEffect(() => {
 
   const data = window.WB_ELECTION_DATA?.sheet_0;
@@ -19,7 +21,8 @@ function Tab1() {
     BJP: "#ff9933",
     CPI: "#e53935",
     CPIM: "#e53935",
-    INC: "#1976d2"
+    INC: "#1976d2",
+    BGMP: "#FFFF00"
   };
 
   const seats = Object.entries(data);
@@ -31,7 +34,10 @@ function Tab1() {
       const el = document.querySelector(`[sub_link="${r.constituency}"]`);
 
       if (el) {
-        el.style.fill = partyColor[r.party] || "#cccccc";
+        el.style.fill = partyColor[r.party] || "#ff0000";
+      }
+      else{
+        console.log(r.constituency);
       }
 
     }, index * 15); // controls animation speed
@@ -44,8 +50,10 @@ useEffect(() => {
 
   document.querySelectorAll("path[sub_link]").forEach(p => {
 
-    p.style.stroke = "none";
-    p.style.strokeWidth = "1";
+    // p.style.stroke = "#ffffff";   // ✅ keep border
+    p.style.stroke = "rgba(255,255,255,0.5)";
+    p.style.strokeWidth = "0.5";
+    p.style.filter = "none";      // remove glow
 
   });
 
@@ -54,12 +62,9 @@ useEffect(() => {
     const el = document.querySelector(`[sub_link="${selectedSeat}"]`);
 
     if(el){
-
       el.style.stroke = "#111";
       el.style.strokeWidth = "3";
-
       el.style.filter = "drop-shadow(0px 0px 6px rgba(0,0,0,0.6))";
-
     }
 
   }
@@ -69,9 +74,11 @@ useEffect(() => {
   const handlePathClick = (event) => {
 
   const target = event.target;
+  console.log(target);
   if (!target) return;
 
   const constituency_name = target.getAttribute("sub_link");
+  console.log(constituency_name);
   if (!constituency_name) return;
 
   const seatKey = constituency_name
@@ -176,7 +183,7 @@ useEffect(() => {
         <TransformComponent wrapperClass="!w-full !h-full" contentClass="flex items-center justify-center">
           {/* <div className="pb-10"> */}
           <NewWbAssembly
-            className="w-full h-auto cursor-pointer"
+            className="w-full h-auto cursor-pointer wb-map"
             onClick={handlePathClick}
           />
           {/* </div> */}
