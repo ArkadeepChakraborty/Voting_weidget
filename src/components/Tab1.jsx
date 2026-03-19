@@ -489,7 +489,7 @@ function Tab1() {
           >
             <TransformComponent
               wrapperClass="!w-full !h-full"
-              contentClass="flex items-center justify-center"
+              contentClass="flex items-center justify-center -ml-13 lg:-ml-30 md:-ml-30"
             >
               <NewWbAssembly
                 className="w-full h-full cursor-pointer"
