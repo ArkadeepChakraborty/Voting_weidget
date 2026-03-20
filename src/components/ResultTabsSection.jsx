@@ -82,7 +82,7 @@ export default function ResultTabsSection() {
 //                     <div className="flex gap-2 mb-6 ">
 //                         <button
 //                             onClick={() => setActiveTab("map")}
-//                             className={`flex-1 py-2 rounded-full text-sm font-semibold border 
+//                             className={`flex-1 py-2 rounded-full text-sm font-semibold border
 //                 ${activeTab === "map"
 //                                     ? "bg-orange-400 text-white"
 //                                     : "bg-gray-200 text-black"

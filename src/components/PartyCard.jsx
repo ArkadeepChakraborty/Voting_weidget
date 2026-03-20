@@ -57,7 +57,7 @@ export default function PartyCard({ party, onClick }) {
       </h2>
 
       <p className="text-base sm:text-2xl font-bold mt-2">
-          {party.percentage ? `${party.percentage}%` : party.votes}
+        {party.percentage ? `${party.percentage}%` : party.votes}
       </p>
 
     </div>

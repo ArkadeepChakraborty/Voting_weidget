@@ -25,7 +25,6 @@
   "en": "ইংরেজি",
   "bn": "বাংলা",
   "Save Changes": "পরিবর্তনগুলি সংরক্ষণ করুন",
-  
   "District Name_eg": "জেলার নাম (ইংরেজি)",
   "District Name_bn": "জেলার নাম (বাংলা)",
   "District Name_hn": "জেলার নাম (হিন্দি)",
@@ -35,7 +34,6 @@
   "Candidate name_eg": "প্রার্থীর নাম (ইংরেজি)",
   "Candidate name_bn": "প্রার্থীর নাম (বাংলা)",
   "Candidate name_hn": "প্রার্থীর নাম (হিন্দি)",
-
   "cooch_behar": "কোচবিহার",
   "alipurduar": "আলিপুরদুয়ার",
   "jalpaiguri": "জলপাইগুড়ি",
@@ -58,7 +56,6 @@
   "purba_bardhaman": "পূর্ব বর্ধমান",
   "paschim_bardhaman": "পশ্চিম বর্ধমান",
   "birbhum": "বীরভূম",
-  
   "mekliganj_sc": "মেখলিগঞ্জ (এসসি)",
   "mathabhanga_sc": "মাথাভাঙ্গা (এসসি)",
   "cooch_behar_uttar_sc": "কোচবিহার উত্তর (এসসি)",
@@ -69,13 +66,11 @@
   "dinhata": "দিনহাটা",
   "natabari": "নাটাবাড়ি",
   "tufanganj": "তুফানগঞ্জ",
-
   "kumargram_st": "কুমারগ্রাম (এসটি)",
   "kalchini_st": "কালচিনি (এসটি)",
   "alipurduars": "আলিপুরদুয়ার",
   "falakata": "ফালাকাটা",
   "madarihat": "মাদারিহাট",
-
   "dhupguri_sc": "ধূপগুড়ি (এসসি)",
   "maynaguri_sc": "ময়নাগুড়ি (এসসি)",
   "rajganj_sc": "রাজগঞ্জ (এসসি)",
@@ -348,5 +343,4 @@
   "nalhati": "নলহাটি",
   "murarai": "মুরারাই",
   "kalimpong": "কালিম্পং"
-
 }

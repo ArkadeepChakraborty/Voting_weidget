@@ -52,25 +52,25 @@ export default function HomePage() {
   }, []);
 
   /* ================= LOADING UI ================= */
- if (loading) {
-  return (
-    <div className="h-screen flex items-center justify-center bg-white">
+  if (loading) {
+    return (
+      <div className="h-screen flex items-center justify-center bg-white">
 
-      <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4">
 
-        {/* Spinner */}
-        <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+          {/* Spinner */}
+          <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
 
-        {/* text */}
-        <p className="text-sm text-gray-500 font-serif">
-          Fetching election data...
-        </p>
+          {/* text */}
+          <p className="text-sm text-gray-500 font-serif">
+            Fetching election data...
+          </p>
+
+        </div>
 
       </div>
-
-    </div>
-  );
-}
+    );
+  }
 
   /* ================= MAIN UI ================= */
   return (

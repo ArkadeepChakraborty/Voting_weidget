@@ -25,7 +25,6 @@
   "bn": "बंगाली",
   "hn": "हिंदी",
   "Save Changes": "परिवर्तनों को सहेजें",
-
   "District Name_eg": "जिला नाम (अंग्रेज़ी)",
   "District Name_bn": "जिला नाम (बंगाली)",
   "District Name_hn": "जिला नाम (हिंदी)",
@@ -35,7 +34,6 @@
   "Candidate name_eg": "उम्मीदवार का नाम (अंग्रेज़ी)",
   "Candidate name_bn": "उम्मीदवार का नाम (बंगाली)",
   "Candidate name_hn": "उम्मीदवार का नाम (हिंदी)",
-  
   "cooch_behar": "कूच बिहार",
   "alipurduar": "अलीपुरद्वार",
   "jalpaiguri": "जलपाईगुड़ी",
@@ -58,7 +56,6 @@
   "purba_bardhaman": "पूर्व बर्धमान",
   "paschim_bardhaman": "पश्चिम बर्धमान",
   "birbhum": "बीरभूम",
-
   "mekliganj_sc": "मेखलीगंज (एससी)",
   "mathabhanga_sc": "माथाभांगा (एससी)",
   "cooch_behar_uttar_sc": "कूचबिहार उत्तर (एससी)",
@@ -73,7 +70,6 @@
   "alipurduars": "अलीपुरद्वार",
   "falakata": "फालाकाटा",
   "madarihat": "मादरिहाट",
-
   "dhupguri_sc": "धूपगुड़ी (एससी)",
   "maynaguri_sc": "मयनागुड़ी (एससी)",
   "rajganj_sc": "राजगंज (एससी)",
@@ -81,7 +77,6 @@
   "mal_st": "माल (एसटी)",
   "nagrakata_st": "नागराकाटा (एसटी)",
   "jalpaiguri_sc": "जलपाईगुड़ी (एससी)",
-
   "kurseong": "कर्सियांग",
   "matigara-naxalbari_sc": "माटीगाड़ा-नक्सलबाड़ी (एससी)",
   "siliguri": "सिलीगुड़ी",
@@ -348,5 +343,4 @@
   "nalhati": "नलहाटी",
   "murarai": "मुरराई",
   "kalimpong": "कालिंपोंग"
-
 }
