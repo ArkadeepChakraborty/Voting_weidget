@@ -52,7 +52,7 @@ export default function PieChartSection({ parties }) {
       }
     }
 
-    handleResize(); 
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

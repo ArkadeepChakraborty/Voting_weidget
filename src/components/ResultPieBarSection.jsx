@@ -336,8 +336,8 @@ export default function ResultPieBarSection() {
               key={year}
               onClick={() => setActiveYear(year)}
               className={`px-3 py-1 rounded-full text-sm font-semibold border ${activeYear === year
-                  ? "bg-gray-800 text-white"
-                  : "bg-gray-100"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-100"
                 }`}
             >
               {year}
@@ -401,7 +401,7 @@ export default function ResultPieBarSection() {
               className="grid grid-cols-3 items-center text-sm p-2 rounded"
               style={{
                 backgroundColor: item.color,
-                color: "#fff" 
+                color: "#fff"
               }}
             >
               <div className="font-semibold">
