@@ -23,5 +23,5 @@ export default defineConfig({
       }
     }
   },
-  base:"voting-app"
+  base:"/voting-app/"
 })
